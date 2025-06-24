@@ -1,0 +1,122 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-left: 7%;
+    padding-right: 7%;
+    box-sizing: border-box;
+  }
+  
+  .buttonRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .leftButtons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .categoryButton {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+  }
+  
+  .categoryButton:hover {
+    background-color: #ddd;
+  }
+  
+  .active {
+    background-color: #3B9C3C;
+    color: white;
+  }
+  
+  .rightButton .seeAllButton {
+    padding: 8px 16px;
+    background-color: #3B9C3C;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .rightButton .seeAllButton:hover {
+    background-color: #005bbb;
+  }
+  
+  .productList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .productCard {
+    flex: 1 1 calc(22% - 10px);
+    padding: 15px;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  }
+  
+  /* Hover effect */
+  .productCard:hover {
+    transform: scale(1.03); /* Slight zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  }
+
+  .productTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0 6px 0;
+    color: #333;
+  }
+  
+  .productPrice {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 12px;
+  }
+  
+  /* Buy Button */
+  .buyButton {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #ff9900; /* Amazon-like color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buyButton:hover {
+    background-color: #e68a00;
+  }
+  
+  
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .productCard {
+      flex: 1 1 48%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .productCard {
+      flex: 1 1 100%;
+    }
+  }
+  

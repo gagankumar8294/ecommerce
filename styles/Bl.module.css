@@ -1,0 +1,102 @@
+/* ===== Container ===== */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* ===== Main Title ===== */
+  .main_heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #222;
+  }
+  
+  /* ===== Timestamp ===== */
+  .time {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+  
+  /* ===== Headings ===== */
+  .h1,
+  .h2,
+  .h3 {
+    font-weight: 600;
+    color: #333;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  
+  .h1 {
+    font-size: 2rem;
+  }
+  
+  .h2 {
+    font-size: 1.6rem;
+  }
+  
+  .h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* ===== Paragraph / Content ===== */
+  .paragraph {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ===== Image Styling ===== */
+  .image_wh {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ===== Link Styling ===== */
+  .link {
+    display: inline-block;
+    color: #0066cc;
+    text-decoration: underline;
+    margin: 1rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #003d80;
+  }
+  
+  /* ===== Responsive Enhancements ===== */
+  @media (max-width: 600px) {
+    .main_heading {
+      font-size: 2rem;
+    }
+  
+    .h1 {
+      font-size: 1.6rem;
+    }
+  
+    .h2 {
+      font-size: 1.4rem;
+    }
+  
+    .h3 {
+      font-size: 1.2rem;
+    }
+  
+    .paragraph {
+      font-size: 1rem;
+    }
+  }
+  
