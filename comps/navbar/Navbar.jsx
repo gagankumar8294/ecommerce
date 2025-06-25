@@ -10,7 +10,7 @@ function NavBar() {
       <nav className="nav_bar">
         <div className="nav_container">
               <Link href="/" className='logo_border'>
-                <Image className='logo' src="/black_logo.png" alt="codeaspirant-logo" width={80} height={80}/>
+                <Image className='logo' src="/elitepurchase.png" alt="codeaspirant-logo" width={100} height={100}/>
               </Link>
               <div className="hidden-md">
                 <button className="hamburger_button" onClick={() => setNavbar(!navbar)}>

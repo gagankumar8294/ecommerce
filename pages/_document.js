@@ -11,6 +11,9 @@ const generateNonce = () => {
       return (
         <Html>
           <Head>
+            {/* ✅ Add favicon link */}
+          <link rel="icon" href="/fav_icon/elitepurchase.png" type="image/png" />
+
             <script
               async
               defer
