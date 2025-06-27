@@ -7,7 +7,10 @@ function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className="nav_bar">
+      <nav style={{
+        position: 'sticky',
+        top: 0
+      }} className="nav_bar">
         <div className="nav_container">
               <Link href="/" className='logo_border'>
                 <Image className='logo' src="/elitepurchase.png" alt="codeaspirant-logo" width={100} height={100}/>

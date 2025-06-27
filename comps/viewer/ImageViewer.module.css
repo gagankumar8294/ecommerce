@@ -1,0 +1,56 @@
+.viewerContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .mainImageContainer {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .mainImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .thumbnailContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .thumbnail {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: border 0.3s;
+  }
+  
+  .thumbnail:hover {
+    border-color: #3b82f6; /* Tailwind blue-500 */
+  }
+  
+  .active {
+    border-color: #3b82f6;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .thumbnail {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  

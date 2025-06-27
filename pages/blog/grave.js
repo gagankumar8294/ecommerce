@@ -4,6 +4,13 @@ import FacebookComments from '../../comps/comments/FacebookComments';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import ImageViewer from '@/comps/viewer/ImageViewer';
+
+const imageList = [
+  { src: '/viewer/img1.png', alt: 'Front view of the fashion product' },
+  { src: '/viewer/img2.png', alt: 'Side view showcasing fabric texture' },
+  { src: '/viewer/img3.png', alt: 'Detailed view of design elements' },
+];
 
 const Grave = () => {
   const [isClient, setIsClient] = useState(false);
@@ -55,6 +62,16 @@ const Grave = () => {
         <h1 className={styles.main_heading}>Another Product Joins the Google Graveyard</h1>
         <p className={styles.paragraph}>More apps have joined the Google Graveyard, what’s the reason?</p>
       </div>
+
+
+
+      <div style={{ paddingTop: '100px' }}>
+        <ImageViewer images={imageList} />
+      </div>
+
+
+
+
       <section className={styles.so_sec}>
       <div className={styles.social}>
         <ul>
