@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <div>
       <nav style={{
-        position: 'sticky',
+        // position: 'sticky',
         top: 0
       }} className="nav_bar">
         <div className="nav_container">
