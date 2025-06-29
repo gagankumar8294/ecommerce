@@ -12,7 +12,7 @@ const imageList = [
   { src: '/viewer/img3.png', alt: 'Detailed view of design elements' },
 ];
 
-const Grave = () => {
+const MensTshirts = () => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -58,21 +58,24 @@ const Grave = () => {
 </Head>
 
       <div>
-        <p className={styles.publish}>Published on December 5, 2022 In Endless Origins</p>
-        <h1 className={styles.main_heading}>Another Product Joins the Google Graveyard</h1>
-        <p className={styles.paragraph}>More apps have joined the Google Graveyard, what’s the reason?</p>
+        <p className={styles.publish}>Published on June 29, 2025 In Endless Origins</p>
+        <h1 className={styles.main_heading}>Top 7 Oversized Printed T-Shirts Under ₹599 in 2025</h1>
       </div>
 
-
-
-      <div style={{ paddingTop: '100px' }}>
-        <ImageViewer images={imageList} />
+      {/* Feature Image */}
+      <div className={styles.image_border}>
+        <Image className={styles.image_wh}
+          src="/blog_images/google/google.jpg"
+          alt="Example Image"
+          width={762}
+          height={438}
+          quality={100}
+          priority
+        />
       </div>
 
-
-
-
-      <section className={styles.so_sec}>
+    {/* Social Sharing Icons */}
+    <section className={styles.so_sec}>
       <div className={styles.social}>
         <ul>
           <li>
@@ -141,38 +144,439 @@ const Grave = () => {
         </ul>
       </div>
     </section>
-      <div className={styles.image_border}>
-        <Image className={styles.image_wh}
-          src="/blog_images/google/google.jpg"
-          alt="Example Image"
-          width={100}
-          height={100}
-        />
-      </div>
-      <div>
+
+    <p className={styles.paragraph}>Looking for trendy yet affordable oversized graphic tees? Bewakoof brings you stylish graphic tees that go well with jeans, shorts, and casual wear. Made from comfortable cotton fabric, these tees are perfect for a relaxed day out or a casual meet-up.</p>
+
+    
+      
+      {/* Audio */}
+      {/* <div>
         <p className={styles.blog_audio_text}>listen to this story</p>
         <audio className={styles.blog_audio} controls>
           <source src="/blog_audio/google/This Feeling.mp3" type="audio/mp3" />
           <source src="/blog_audio/google/This Feeling.ogg" type="audio/ogg" />
         </audio>
+      </div> */}
+
+    <h2 className={styles.h2_heading}>
+        1. Bewakoof Graphic Tees
+    </h2>
+    <p className={styles.paragraph}>
+        Bewakoof is known for offering bold and trendy graphic tees perfect for casual wear. Here are two of their best-selling options:
+    </p>
+    <h3 className={styles.h2_heading}>
+        Bewakoof "Kiss Me" Graphic Tee
+    </h3>
+    <div style={{ paddingTop: '0px' }}>
+        <ImageViewer images={imageList} />
+    </div>
+    {/* Amazon link */}
+    <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "20px",
+    width: "100%",
+  }}
+>
+  <a
+    href="https://www.amazon.in/dp/YOUR_PRODUCT_ID"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "inline-block",
+      backgroundColor: "#FF9900",
+      color: "#111",
+      fontWeight: "bold",
+      fontSize: "16px",
+      padding: "12px 24px",
+      textAlign: "center",
+      textDecoration: "none",
+      borderRadius: "8px",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+      transition: "background-color 0.3s ease, transform 0.2s ease",
+      maxWidth: "100%",
+    }}
+  >
+    🛒 Buy on Amazon
+  </a>
+    </div>
+
+
+    <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
+  Price: ₹499
+</p>
+<p className={styles.paragraph} style={{ 
+    // fontSize: "14px", 
+    // marginBottom: "1px"
+}}>
+  Size: S, M, L, XL
+</p>
+<p className={styles.paragraph} style={{ 
+    // color: "darkgray", 
+    // fontStyle: "italic"
+    }}>
+  Colors: Black, White
+</p>
+    <p className={styles.paragraph}><span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>Description:</span> This graphic tee features a fun "Kiss Me" print, perfect for a bold look. Made from 100% cotton, it’s breathable and comfortable for all-day wear.</p>
+
+
+<h3 className={styles.h2_heading}>
+    Bewakoof "Good Vibes" Graphic Tee
+</h3>
+<div style={{ paddingTop: '0px' }}>
+    <ImageViewer images={imageList} />
+</div>
+{/* Amazon link */}
+    <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "20px",
+    width: "100%",
+  }}
+>
+  <a
+    href="https://www.amazon.in/dp/YOUR_PRODUCT_ID"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "inline-block",
+      backgroundColor: "#FF9900",
+      color: "#111",
+      fontWeight: "bold",
+      fontSize: "16px",
+      padding: "12px 24px",
+      textAlign: "center",
+      textDecoration: "none",
+      borderRadius: "8px",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+      transition: "background-color 0.3s ease, transform 0.2s ease",
+      maxWidth: "100%",
+    }}
+  >
+    🛒 Buy on Amazon
+  </a>
+    </div>
+<p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
+  Price: ₹499
+</p>
+<p className={styles.paragraph} style={{ 
+    // fontSize: "14px", 
+    // marginBottom: "1px"
+}}>
+  Size: S, M, L, XL
+</p>
+<p className={styles.paragraph} style={{ 
+    // color: "darkgray", 
+    // fontStyle: "italic"
+    }}>
+  Colors: Grey, Blue
+</p>
+<p className={styles.paragraph}><span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>Description:</span> Spread some good vibes with this graphic tee featuring a minimalist "Good Vibes" print. Ideal for a relaxed yet trendy look.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* Single Brand Product */}
+<h2 className={styles.h2_heading}>
+    2. Alan Jones Cotton Tees
+</h2>
+    <p className={styles.paragraph}>
+        Alan Jones is a favorite for comfort and great quality. Here are two standout options from their collection:
+    </p>
+    <h3 className={styles.h2_heading}>
+        Alan Jones Men's Cotton T-Shirt - Navy Blue
+    </h3>
+    <div style={{ paddingTop: '0px' }}>
+        <ImageViewer images={imageList} />
+    </div>
+    {/* Amazon link */}
+    <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "20px",
+    width: "100%",
+  }}
+>
+  <a
+    href="https://www.amazon.in/dp/YOUR_PRODUCT_ID"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "inline-block",
+      backgroundColor: "#FF9900",
+      color: "#111",
+      fontWeight: "bold",
+      fontSize: "16px",
+      padding: "12px 24px",
+      textAlign: "center",
+      textDecoration: "none",
+      borderRadius: "8px",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+      transition: "background-color 0.3s ease, transform 0.2s ease",
+      maxWidth: "100%",
+    }}
+  >
+    🛒 Buy on Amazon
+  </a>
+    </div>
+    <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
+  Price: ₹599
+</p>
+<p className={styles.paragraph} style={{ 
+    // fontSize: "14px", 
+    // marginBottom: "1px"
+}}>
+  Size: S, M, L, XL
+</p>
+<p className={styles.paragraph} style={{ 
+    // color: "darkgray", 
+    // fontStyle: "italic"
+    }}>
+  Colors: Navy Blue, Charcoal Grey
+</p>
+    <p className={styles.paragraph}><span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>Description:</span>  A classic navy blue cotton t-shirt that can be paired with jeans or shorts. The relaxed fit makes it ideal for everyday wear.
+    </p>
+
+
+<h3 className={styles.h2_heading}>
+    Alan Jones Men's Cotton T-Shirt - Dark Red
+</h3>
+<div style={{ paddingTop: '0px' }}>
+    <ImageViewer images={imageList} />
+</div>
+{/* Amazon link */}
+    <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "20px",
+    width: "100%",
+  }}
+>
+  <a
+    href="https://www.amazon.in/dp/YOUR_PRODUCT_ID"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "inline-block",
+      backgroundColor: "#FF9900",
+      color: "#111",
+      fontWeight: "bold",
+      fontSize: "16px",
+      padding: "12px 24px",
+      textAlign: "center",
+      textDecoration: "none",
+      borderRadius: "8px",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+      transition: "background-color 0.3s ease, transform 0.2s ease",
+      maxWidth: "100%",
+    }}
+  >
+    🛒 Buy on Amazon
+  </a>
+    </div>
+<p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
+  Price: ₹599
+</p>
+<p className={styles.paragraph} style={{ 
+    // fontSize: "14px", 
+    // marginBottom: "1px"
+}}>
+  Size: S, M, L, XL
+</p>
+<p className={styles.paragraph} style={{ 
+    // color: "darkgray", 
+    // fontStyle: "italic"
+    }}>
+  Colors: Dark Red, Black
+</p>
+<p className={styles.paragraph}><span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>Description:</span>  This vibrant dark red t-shirt is a great addition to any wardrobe. Made from a cotton-spandex blend, it offers a comfortable fit for any occasion.
+</p>
+
+
+
+
+
+
+
+
+{/* Single Brand Product */}
+<h2 className={styles.h2_heading}>
+    3. Veirdo & Urbano Fashion Tees
+</h2>
+    <p className={styles.paragraph}>
+        Veirdo and Urbano offer edgy and graphic-heavy designs perfect for people who want to stand out. Here are two options to choose from:
+    </p>
+    <h3 className={styles.h2_heading}>
+        Veirdo Men's Graphic T-Shirt - Blue
+    </h3>
+    <div style={{ paddingTop: '0px' }}>
+        <ImageViewer images={imageList} />
+    </div>
+    {/* Amazon link */}
+    <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "20px",
+    width: "100%",
+  }}
+>
+  <a
+    href="https://www.amazon.in/dp/YOUR_PRODUCT_ID"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "inline-block",
+      backgroundColor: "#FF9900",
+      color: "#111",
+      fontWeight: "bold",
+      fontSize: "16px",
+      padding: "12px 24px",
+      textAlign: "center",
+      textDecoration: "none",
+      borderRadius: "8px",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+      transition: "background-color 0.3s ease, transform 0.2s ease",
+      maxWidth: "100%",
+    }}
+  >
+    🛒 Buy on Amazon
+  </a>
+    </div>
+    <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
+  Price: ₹599
+</p>
+<p className={styles.paragraph} style={{ 
+    // fontSize: "14px", 
+    // marginBottom: "1px"
+}}>
+  Size: S, M, L, XL
+</p>
+<p className={styles.paragraph} style={{ 
+    // color: "darkgray", 
+    // fontStyle: "italic"
+    }}>
+  Colors: Blue, Black
+</p>
+    <p className={styles.paragraph}><span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>Description:</span>  A bold and fun design for all those who want to show off their quirky side. This blue graphic tee is oversized, comfortable, and perfect for casual outings.
+    </p>
+
+
+<h3 className={styles.h2_heading}>
+    Urbano Fashion Men's Graphic T-Shirt - Black
+</h3>
+<div style={{ paddingTop: '0px' }}>
+    <ImageViewer images={imageList} />
+</div>
+{/* Amazon link */}
+    <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "20px",
+    width: "100%",
+  }}
+>
+  <a
+    href="https://www.amazon.in/dp/YOUR_PRODUCT_ID"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "inline-block",
+      backgroundColor: "#FF9900",
+      color: "#111",
+      fontWeight: "bold",
+      fontSize: "16px",
+      padding: "12px 24px",
+      textAlign: "center",
+      textDecoration: "none",
+      borderRadius: "8px",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+      transition: "background-color 0.3s ease, transform 0.2s ease",
+      maxWidth: "100%",
+    }}
+  >
+    🛒 Buy on Amazon
+  </a>
+    </div>
+<p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
+  Price: ₹599
+</p>
+<p className={styles.paragraph} style={{ 
+    // fontSize: "14px", 
+    // marginBottom: "1px"
+}}>
+  Size: S, M, L, XL
+</p>
+<p className={styles.paragraph} style={{ 
+    // color: "darkgray", 
+    // fontStyle: "italic"
+    }}>
+  Colors: Black, Green
+</p>
+<p className={styles.paragraph}><span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>Description:</span>  Urbano offers a black graphic tee with a stylish print that's perfect for streetwear or a laid-back weekend look.
+</p>
+
+
+
+      {/* <div style={{ paddingTop: '10px' }}>
+        <ImageViewer images={imageList} />
+      </div> */}
+
+
+
+      <div className={styles.image_border}>
+        <Image
+          src="/partydress.png"
+          alt="Example Image"
+          width={1200}
+          height={630}
+          quality={100}
+          priority
+          className={styles.image_wh}
+        />
+
       </div>
-      <p className={styles.paragraph}>
-        Google is no 
-        <a className={styles.paragraph_link}
-         href="codeaspirant.app/blog/first-post" 
-         alt="first-post"> Stranger </a> 
-         to consigning its projects to the digital graveyard. From Google Inbox to Google+, to Stadia—the tech giant has a long and infamous history of shuttering loved apps and services. Today, another one bites the dust. 
-      </p>
-      <p className={styles.paragraph}>
-        Google is no stranger to consigning its projects to the digital graveyard. From Google Inbox to Google+, to Stadia—the tech giant has a long and infamous history of shuttering loved apps and services. Today, another one bites the dust. 
-      </p>
-      <h2 className={styles.h2_heading}>
+
+
+
+
+      {/* <h2 className={styles.h2_heading}>
         Dishonourable mentions: Products Google killed
       </h2>
       <p className={styles.paragraph}>
         Google is no stranger to consigning its projects to the digital graveyard. From Google Inbox to Google+, to Stadia—the tech giant has a long and infamous history of shuttering loved apps and services. Today, another one bites the dust. 
-      </p>
-      <p className={styles.paragraph}>
+      </p> */}
+
+
+            {/* <h3 className={styles.h2_heading}>
+              Google is no stranger to consigning its projects to the digital graveyard. From Google Inbox to Google+, to Stadia—the tech giant has a long and infamous history of shuttering loved apps and services. Today, another one bites the dust. 
+      
+            </h3> */}
+
+
+      {/* <p className={styles.paragraph}>
         Google is no stranger to consigning its projects to the digital graveyard. From Google Inbox to Google+, to Stadia—the tech giant has a long and infamous history of shuttering loved apps and services. Today, another one bites the dust. 
       </p>
       <p className={styles.paragraph}>
@@ -182,19 +586,33 @@ const Grave = () => {
         href="codeaspirant.app/blog/first-post"
         alt="paragrah link">
         &nbsp;  push to ideate</a>, create, and launch new services for the company.  
-      </p>
-      <p className={styles.paragraph}>
+      </p> */}
+      {/* <p className={styles.paragraph}>
         Google is no <strong>LPA</strong> in the company<strong>—Launch, Promo,</strong> and <strong>Abandon</strong>. to consigning its projects to the digital graveyard. From Google Inbox to Google+, to Stadia—the tech giant has a long and infamous history of shuttering loved apps and services. Today, another one bites the dust. 
-      </p>
-      <div className={styles.yt_vid_border}>
+      </p> */}
+      
+      
+      
+      
+      
+      {/* Youtube iframe */}
+      {/* <div className={styles.yt_vid_border}>
         <iframe  className={styles.yt_vid}
           // width="560" height="315" 
           src="https://www.youtube.com/embed/xA-jy5B9_K0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
         </iframe>
-      </div>
+      </div> */}
+
+
+
+
       <p className={styles.paragraph}>
-        Google is no <strong>LPA</strong> in the company<strong>—Launch, Promo,</strong> and <strong>Abandon</strong>. to consigning its projects to the digital graveyard. From Google Inbox to Google+, to Stadia—the tech giant has a long and infamous history of shuttering loved apps and services. Today, another one bites the dust. 
+        To updated with latest trendy outfits <strong>Follow</strong> Channel in Instagram <strong>Elite Purchase</strong> & be the first one to get  notified <strong>follow</strong>. to consigning its projects to the digital graveyard. From Google Inbox to Google+, to Stadia—the tech giant has a long and infamous history of shuttering loved apps and services. Today, another one bites the dust. 
       </p>
+
+
+
+      {/* social sharing icons */}
       <section className={styles.so_sec}>
         <div className={styles.social}>
           <ul>
@@ -236,42 +654,67 @@ const Grave = () => {
           </ul>
         </div>
       </section>
-      <section>
+
+
+
+ {/* Google ads Section */}
+      {/* <section>
         <div className={styles.download_our_app}>
           <p>Hello</p>
           <p>Hello</p>
           <p>Hello</p>
         </div>
-      </section>
+      </section> */}
+
+
+
+    {/* Instagram Telegram */}
       <section className={styles.community}>
-        <h4>3 Ways to Join Our Community</h4>
+        <h4>2 Ways to Join Our Community</h4>
         <div className={styles.download_our_app}>
           <h3>Telegram Group</h3>
-          <p>Discover special offers, top stories, upcoming events, and more.</p>
-          <h5>Join Telegram</h5>
+          <p>Discover special offers, Top Products, upcoming blogs, and more.</p>
+          <h5>
+            <a href="https://t.me/techxpsky" target="_blank" rel="noopener noreferrer">
+                Join Telegram Channel
+            </a>
+          </h5>
+
         </div>
-        <div className={styles.download_our_app}>
+        {/* DISCORD */}
+        {/* <div className={styles.download_our_app}>
           <h3>Discord Server</h3>
           <p>Stay Connected with a larger ecosystem of data science and ML Professionals</p>
-        </div>
+        </div> */}
+
+        {/* Instagram */}
         <div className={styles.download_our_app}>
-          <h3>Subscribe to our Daily newsletter</h3>
-          <p>Join our editors every weekday evening as they steer you through the most significant news of the day.</p>
+          <h3>Instagram Page</h3>
+          <p>Just one click in stories you will be buying latest outfits.</p>
+          <h5>
+            <a href="https://www.instagram.com/elitepurchase.founder?igsh=NGNuMmhzd2xkazBi" target="_blank" rel="noopener noreferrer">
+                Follow Instagram Page
+            </a>
+          </h5>
         </div>
       </section>
+
+
+
+    {/* Facebook comments */}
       <div className='interact_section'>
         <div className='left_ad_posts'>
-            <h4>Left Secion</h4>
+            {/* <h4>Left Secion</h4> */}
         </div>
         <div className='just_type_it'>
-          <FacebookComments href="https://codeaspirant.vercel.app/blog/grave" />
+          <FacebookComments href="https://elitepurchase.vercel.app/blog/top-7-oversized-printed-t-shirts-Under-599-in-2025" />
         </div>
         <div className='right_ad_posts'>
-            <h4>right Secion</h4>
+            {/* <h4>right Secion</h4> */}
         </div>
       </div>
     </div>
   );
 };
 
-export default Grave;
+export default MensTshirts;

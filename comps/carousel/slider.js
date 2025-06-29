@@ -2,12 +2,13 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import styles from "./BannerCarousel.module.css"; // Importing CSS
+// import styles from "./BannerCarousel.module.css"; // Importing CSS
+import styles from "../../styles/Blog.module.css";
 
 const bannerImages = [
   "/partydress.png",
-  "/partydress.png",
-  "/partydress.png",
+  "/part.png",
+  "/ecom.png",
 ];
 
 export default function BannerCarousel() {
@@ -34,6 +35,7 @@ export default function BannerCarousel() {
             }`}
           >
             <Image
+            className={styles.image_wh}
               src={img}
               alt={`Banner ${index + 1}`}
               fill
