@@ -363,7 +363,7 @@ const MensTshirts = () => {
         }}
     >
         <a
-        href="https://amzn.to/4l3XO7Q" // Replace with your actual affiliate link
+        href="https://amzn.to/44F9RCQ" // Replace with your actual affiliate link
         target="_blank"
         rel="noopener noreferrer"
         style={{
