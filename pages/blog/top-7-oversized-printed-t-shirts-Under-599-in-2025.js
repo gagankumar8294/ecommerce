@@ -24,8 +24,23 @@ const BewakoofProductTwo = [
 ];
 
 const BewakoofProductThree = [
-  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/anime/bewakoof-black-graphic-print-tshirt-men.jpg', alt: 'Side view showcasing fabric texture' },
+    { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/anime/bewakoof-black-graphic-print-tshirt-men.jpg', alt: 'Side view showcasing fabric texture' },
+    
+]
+
+const BewakoofNASAProduct = [
+  { src : '/blog_images/mens/blog1-10/bog1-images/bewakoof/nasa/bewakoof-i-needspace-red-graphic-print-tshirt-men.jpg'},
+  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/nasa/bewakoof-red-nasa-graphic-print-tshirt-men.jpg', alt: 'Side view showcasing fabric texture' },
 ];
+
+
+const BewakoofLostMountainImages = [
+    { src : '/blog_images/mens/blog1-10/bog1-images/bewakoof/travel/-traveler-lover-bewakoof-black-graphic-print-tshirt-men.jpg'},
+    { src : '/blog_images/mens/blog1-10/bog1-images/bewakoof/travel/bewakoof-travele-mountain-graphic-print-tshirt.jpg'},
+    { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/travel/bewakoof-black-travweling-lost-in-mountain-graphic-print-tshirt-men.jpg', alt: 'Side view showcasing fabric texture' },
+]
+
+
 const MensTshirts = () => {
   const [isClient, setIsClient] = useState(false);
 
@@ -423,11 +438,178 @@ const MensTshirts = () => {
     </ul>
     </div>
 
+{/* Product four */}
+
+    <div>
+    <h3 className={styles.h2_heading}>
+        Bewakoof NASA Printed Red Graphic Tee
+    </h3>
+
+    <div style={{ paddingTop: '0px' }}>
+        <ImageViewer images={BewakoofNASAProduct} /> {/* Replace with your image array */}
+    </div>
+
+    {/* Amazon Link */}
+    <div
+        style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "20px",
+        width: "100%",
+        }}
+    >
+        <a
+        href="https://amzn.to/3ZWMphQ" // Replace with your actual affiliate link
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+            display: "inline-block",
+            backgroundColor: "#FF9900",
+            color: "#111",
+            fontWeight: "bold",
+            fontSize: "16px",
+            padding: "12px 24px",
+            textAlign: "center",
+            textDecoration: "none",
+            borderRadius: "8px",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            transition: "background-color 0.3s ease, transform 0.2s ease",
+            maxWidth: "100%",
+        }}
+        >
+        🛒 Buy on Amazon
+        </a>
+    </div>
+
+    <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
+        Price: ₹449 <span style={{ fontSize: "13px", fontWeight: "normal" }}> (44% Off – Limited Time Deal)</span>
+    </p>
+
+    <p className={styles.paragraph}>
+        Size: S, M, L, XL, 2XL, 3XL
+    </p>
+
+    <p className={styles.paragraph}>
+        Colors: Red, Black (Some variants currently unavailable)
+    </p>
+
+    <p className={styles.paragraph}>
+        <span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>
+        Description:
+        </span>
+        This official NASA-printed t-shirt from Bewakoof offers a stylish regular fit and a high-quality graphic. Made with 100% single jersey cotton, it’s breathable and soft – perfect for casual days. Available in vibrant red and classic black.
+    </p>
+
+    <h3 className={styles.h2_heading}>FAQs – Bewakoof NASA Graphic Tee</h3>
+
+    <p className={styles.paragraph}><strong>Q:</strong> Is the print high quality?<br />
+        <strong>A:</strong> Yes, customers praise the print quality and vibrant design – especially on the red color variant.</p>
+
+    <p className={styles.paragraph}><strong>Q:</strong> Does the t-shirt feel soft and breathable?<br />
+        <strong>A:</strong> Made from single jersey 100% cotton, it’s great for all-day wear and doesn't feel heavy.</p>
+
+    <p className={styles.paragraph}><strong>Q:</strong> Is the fit true to size?<br />
+        <strong>A:</strong> Yes, buyers have confirmed that the sizing is accurate and fits well for most body types.</p>
+
+    <h3 className={styles.h2_heading}>Customer Feedback Highlights</h3>
+
+    <ul className={styles.paragraph}>
+        <li><strong>★★★★★</strong> “Value for money and print quality both are best.” – <em>Nikunj Ninama</em></li>
+        <li><strong>★★★★☆</strong> “Comfy material and great print.” – <em>Sadaf</em></li>
+        <li><strong>★★★★★</strong> “Excellent t-shirt. Loved it.” – <em>Abhishek Deshmukh</em></li>
+        <li><strong>★★★☆☆</strong> “Cloth feels slightly cheap.” – <em>Nishant Keshav Tiwari</em></li>
+        <li><strong>★★★★★</strong> “Nice fabric at this price point.” – <em>Jay Vora</em></li>
+    </ul>
+    </div>
 
 
+      {/* Product Five */}
+    <div>
+    <h3 className={styles.h2_heading}>
+        Bewakoof "Lost in the Mountains" Graphic Tee
+    </h3>
+
+    <div style={{ paddingTop: '0px' }}>
+        <ImageViewer images={BewakoofLostMountainImages} /> {/* Replace with your image array */}
+    </div>
+
+    {/* Amazon Link */}
+    <div
+        style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "20px",
+        width: "100%",
+        }}
+    >
+        <a
+        href="https://amzn.to/447KFVp" // Replace with your Amazon affiliate link
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+            display: "inline-block",
+            backgroundColor: "#FF9900",
+            color: "#111",
+            fontWeight: "bold",
+            fontSize: "16px",
+            padding: "12px 24px",
+            textAlign: "center",
+            textDecoration: "none",
+            borderRadius: "8px",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            transition: "background-color 0.3s ease, transform 0.2s ease",
+            maxWidth: "100%",
+        }}
+        >
+        🛒 Buy on Amazon
+        </a>
+    </div>
+
+    <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
+        Price: ₹398 <span style={{ fontSize: "13px", fontWeight: "normal" }}> (Limited Time Deal -64%)</span>
+    </p>
+
+    <p className={styles.paragraph}>
+        Size: S, M, L, XL, 2XL, 3XL
+    </p>
+
+    <p className={styles.paragraph}>
+        Colors: Black
+    </p>
+
+    <p className={styles.paragraph}>
+        <span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>
+        Description:
+        </span> 
+        Featuring a “Lost in the Mountains” travel-themed graphic, this tee is crafted from lightweight single jersey 100% cotton. Designed with a regular fit, it’s ideal for travel enthusiasts and mountain lovers who want to wear their passion.
+    </p>
+
+    <h3 className={styles.h2_heading}>FAQs – Bewakoof Travel Graphic Tee</h3>
+
+    <p className={styles.paragraph}><strong>Q:</strong> Is it good for summer and travel use?<br />
+        <strong>A:</strong> Yes, it’s breathable and soft, perfect for outdoor activities and road trips.</p>
+
+    <p className={styles.paragraph}><strong>Q:</strong> Does the print fade quickly?<br />
+        <strong>A:</strong> No, reviews show that the print stays clear even after multiple washes when cared for properly.</p>
+
+    <p className={styles.paragraph}><strong>Q:</strong> Is the fit perfect?<br />
+        <strong>A:</strong> Most customers found the fit good, but a few noted slightly loose or tight sizing depending on body type.</p>
+
+    <h3 className={styles.h2_heading}>Customer Feedback Highlights</h3>
+
+    <ul className={styles.paragraph}>
+        <li><strong>★★★★★</strong> “Product quality is good & print is superb.” – <em>Verified Purchase</em></li>
+        <li><strong>★★★★☆</strong> “Good fabric quality at this price. Fits well.” – <em>Vishal</em></li>
+        <li><strong>★★★★★</strong> “Perfect for travel lovers like me!” – <em>Sachin Rawat</em></li>
+        <li><strong>★★★☆☆</strong> “Decent quality but poor fit.” – <em>Nav Gill</em></li>
+        <li><strong>★☆☆☆☆</strong> “Cotton fibers come out during wash. Needs separate washing.” – <em>Sabari Giri</em></li>
+    </ul>
+    </div>
 
       
-      
+
       
       
       
