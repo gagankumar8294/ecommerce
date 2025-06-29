@@ -12,6 +12,20 @@ const imageList = [
   { src: '/viewer/img3.png', alt: 'Detailed view of design elements' },
 ];
 
+const BewakoofProductOne = [
+  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/adventure/bewakoof-red-adevnture-graphic-print-tshirt-men.jpg', alt: 'Front view of the fashion product' },
+  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/adventure/bewakoof-regular-fit-round-neck-cotton-tshirt.jpg', alt: 'Side view showcasing fabric texture' },
+];
+
+const BewakoofProductTwo = [
+  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/regular/bewakoof-mens-graphic-print-regular-fit-t-shirt-2.jpg', alt: 'Side view showcasing fabric texture' },
+  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/regular/bewakoof-mens-graphic-print-regular-fit-t-shirt.jpg', alt: 'Front view of the fashion product' },
+  
+];
+
+const BewakoofProductThree = [
+  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/anime/bewakoof-black-graphic-print-tshirt-men.jpg', alt: 'Side view showcasing fabric texture' },
+];
 const MensTshirts = () => {
   const [isClient, setIsClient] = useState(false);
 
@@ -62,17 +76,6 @@ const MensTshirts = () => {
         <h1 className={styles.main_heading}>Top 7 Oversized Printed T-Shirts Under ₹599 in 2025</h1>
       </div>
 
-      {/* Feature Image */}
-      <div className={styles.image_border}>
-        <Image className={styles.image_wh}
-          src="/blog_images/google/google.jpg"
-          alt="Example Image"
-          width={762}
-          height={438}
-          quality={100}
-          priority
-        />
-      </div>
 
     {/* Social Sharing Icons */}
     <section className={styles.so_sec}>
@@ -145,6 +148,19 @@ const MensTshirts = () => {
       </div>
     </section>
 
+
+      {/* Feature Image */}
+      <div className={styles.image_border}>
+        <Image className={styles.image_wh}
+          src="/blog_images/mens/blog1-10/bog1-images/featuredimage/graphic-tshirts-under-599-men-2025.jpg"
+          alt="Example Image"
+          width={1200}
+          height={630}
+          quality={100}
+          priority
+        />
+      </div>
+
     <p className={styles.paragraph}>Looking for trendy yet affordable oversized graphic tees? Bewakoof brings you stylish graphic tees that go well with jeans, shorts, and casual wear. Made from comfortable cotton fabric, these tees are perfect for a relaxed day out or a casual meet-up.</p>
 
     
@@ -162,13 +178,16 @@ const MensTshirts = () => {
         1. Bewakoof Graphic Tees
     </h2>
     <p className={styles.paragraph}>
-        Bewakoof is known for offering bold and trendy graphic tees perfect for casual wear. Here are two of their best-selling options:
+        Bewakoof is one of the most loved brands when it comes to affordable, bold, and comfortable graphic tees. Here's one of their top-selling picks for 2025:
     </p>
-    <h3 className={styles.h2_heading}>
-        Bewakoof "Kiss Me" Graphic Tee
+
+    {/* Product one */}
+    <div>
+        <h3 className={styles.h2_heading}>
+        Bewakoof "Adventure" Graphic Tee
     </h3>
     <div style={{ paddingTop: '0px' }}>
-        <ImageViewer images={imageList} />
+        <ImageViewer images={BewakoofProductOne} />
     </div>
     {/* Amazon link */}
     <div
@@ -181,7 +200,7 @@ const MensTshirts = () => {
   }}
 >
   <a
-    href="https://www.amazon.in/dp/YOUR_PRODUCT_ID"
+    href="https://amzn.to/3G4fK3f"
     target="_blank"
     rel="noopener noreferrer"
     style={{
@@ -205,28 +224,52 @@ const MensTshirts = () => {
 
 
     <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
-  Price: ₹499
+  Price: ₹539.10 <span style={{ fontSize: "13px", fontWeight: "normal" }}> (Limited Deal – 53% Off)</span>
 </p>
-<p className={styles.paragraph} style={{ 
-    // fontSize: "14px", 
-    // marginBottom: "1px"
-}}>
-  Size: S, M, L, XL
-</p>
-<p className={styles.paragraph} style={{ 
-    // color: "darkgray", 
-    // fontStyle: "italic"
-    }}>
-  Colors: Black, White
-</p>
-    <p className={styles.paragraph}><span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>Description:</span> This graphic tee features a fun "Kiss Me" print, perfect for a bold look. Made from 100% cotton, it’s breathable and comfortable for all-day wear.</p>
 
+<p className={styles.paragraph}>
+  Size: S, M, L, XL, 2XL, 3XL
+</p>
 
-<h3 className={styles.h2_heading}>
-    Bewakoof "Good Vibes" Graphic Tee
+<p className={styles.paragraph}>
+  Colors: Red, Black
+</p>
+
+<p className={styles.paragraph}>
+  <span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>
+    Description:
+  </span> 
+  This red oversized t-shirt features a bold graphic print and super loose fit — ideal for streetwear lovers. Crafted from single jersey 100% cotton, it offers breathability and comfort all day. Pair it with jeans or layer under a denim jacket.
+</p>
+
+<h3 className={styles.h2_heading}>FAQs – Bewakoof Oversized Fit Tee</h3>
+
+<p className={styles.paragraph}><strong>Q:</strong> Will the color fade or shrink after wash?<br />
+<strong>A:</strong> Most users said the color stays bright and fabric holds shape even after multiple washes.</p>
+
+<p className={styles.paragraph}><strong>Q:</strong> Is this really oversized?<br />
+<strong>A:</strong> Yes, it’s a loose “plus-two-size” design — meant to look baggy and relaxed. Size down if you want a snugger fit.</p>
+
+<p className={styles.paragraph}><strong>Q:</strong> Does it come in different colors?<br />
+<strong>A:</strong> Yes, both Red and Black variants are available with the same fit and material.</p>
+
+<h3 className={styles.h2_heading}>Customer Feedback Highlights</h3>
+
+<ul className={styles.paragraph}>
+  <li><strong>★★★★★</strong> “Good quality, washed multiple times – no color fade or shrinkage.” – <em>Verified Buyer (Red)</em></li>
+  <li><strong>★★★★☆</strong> “Nice material and graphic. Haven’t washed it yet.” – <em>C. Shah (Black)</em></li>
+  <li><strong>★★★★☆</strong> “Shoulder cracked slightly on first wash, otherwise fine.” – <em>Placeholder</em></li>
+  <li><strong>★★★☆☆</strong> “Fitting issue — too baggy if you're not into oversized style.” – <em>Souvik Ghosh</em></li>
+</ul>
+    </div>    
+
+   {/* Product two */}
+   <div>
+    <h3 className={styles.h2_heading}>
+    Bewakoof "Regular Fit BlacK And Red Combination" Graphic Tee
 </h3>
 <div style={{ paddingTop: '0px' }}>
-    <ImageViewer images={imageList} />
+    <ImageViewer images={BewakoofProductTwo} />
 </div>
 {/* Amazon link */}
     <div
@@ -239,7 +282,7 @@ const MensTshirts = () => {
   }}
 >
   <a
-    href="https://www.amazon.in/dp/YOUR_PRODUCT_ID"
+    href="https://amzn.to/4l3XO7Q"
     target="_blank"
     rel="noopener noreferrer"
     style={{
@@ -261,29 +304,132 @@ const MensTshirts = () => {
   </a>
     </div>
 <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
-  Price: ₹499
+  Price: ₹404.10 <span style={{ fontSize: "13px", fontWeight: "normal" }}> (Limited Time Deal -63%)</span>
 </p>
-<p className={styles.paragraph} style={{ 
-    // fontSize: "14px", 
-    // marginBottom: "1px"
-}}>
-  Size: S, M, L, XL
+
+<p className={styles.paragraph}>
+  Size: M, L
 </p>
-<p className={styles.paragraph} style={{ 
-    // color: "darkgray", 
-    // fontStyle: "italic"
-    }}>
-  Colors: Grey, Blue
+
+<p className={styles.paragraph}>
+  Colors: Black
 </p>
-<p className={styles.paragraph}><span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>Description:</span> Spread some good vibes with this graphic tee featuring a minimalist "Good Vibes" print. Ideal for a relaxed yet trendy look.</p>
+
+<p className={styles.paragraph}>
+  <span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>
+    Description:
+  </span> 
+  This black round neck t-shirt is made from 100% single jersey cotton, offering a soft, breathable experience with a regular fit. The bold graphic print and classic short sleeve style make it ideal for casual wear with jeans or joggers.
+</p>
+
+<h3 className={styles.h2_heading}>FAQs – Bewakoof Regular Fit Tee</h3>
+
+<p className={styles.paragraph}><strong>Q:</strong> Is the fabric comfortable for daily wear?<br />
+<strong>A:</strong> Yes, customers love the soft cotton feel and breathable design, especially for warm climates.</p>
+
+<p className={styles.paragraph}><strong>Q:</strong> Is the fit tight or loose?<br />
+<strong>A:</strong> This product is a regular fit – slightly snug on the chest and straight on the waist down.</p>
+
+<p className={styles.paragraph}><strong>Q:</strong> Will the color fade after washing?<br />
+<strong>A:</strong> Based on reviews, the black color and print remain intact even after multiple washes if washed in cold water.</p>
+
+<h3 className={styles.h2_heading}>Customer Feedback Highlights</h3>
+
+<ul className={styles.paragraph}>
+  <li><strong>★★★★☆</strong> “Color stayed the same after wash. Size is accurate and quality is very good.” – <em>Verified Purchase</em></li>
+  <li><strong>★★★★★</strong> “The fabric is comfy and the print looks nice. Value for money.” – <em>Buddh Verma</em></li>
+  <li><strong>★★★☆☆</strong> “Print placement was slightly off, falling below chest area.” – <em>Amazon Customer</em></li>
+</ul>
 
 
 
 
+   </div>
 
+{/* Product Three */}
+<div>
 
+<div>
+  <h3 className={styles.h2_heading}>
+    Bewakoof "Black Cotton Regular Fit" Graphic Tee
+  </h3>
 
+  <div style={{ paddingTop: '0px' }}>
+    <ImageViewer images={BewakoofProductThree} />
+  </div>
 
+  {/* Amazon link */}
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      marginTop: "20px",
+      width: "100%",
+    }}
+  >
+    <a
+      href="https://amzn.to/4l3XO7Q" // Replace with your actual affiliate link
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: "inline-block",
+        backgroundColor: "#FF9900",
+        color: "#111",
+        fontWeight: "bold",
+        fontSize: "16px",
+        padding: "12px 24px",
+        textAlign: "center",
+        textDecoration: "none",
+        borderRadius: "8px",
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        transition: "background-color 0.3s ease, transform 0.2s ease",
+        maxWidth: "100%",
+      }}
+    >
+      🛒 Buy on Amazon
+    </a>
+  </div>
+
+  <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
+    Price: ₹399 <span style={{ fontSize: "13px", fontWeight: "normal" }}> (60% Off – Limited Deal)</span>
+  </p>
+
+  <p className={styles.paragraph}>
+    Size: S, XL (Others Currently Unavailable)
+  </p>
+
+  <p className={styles.paragraph}>
+    Colors: Black
+  </p>
+
+  <p className={styles.paragraph}>
+    <span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>
+      Description:
+    </span>
+    This regular fit black graphic tee from Bewakoof is made with 100% single jersey cotton. It’s soft, breathable, and features a bold front graphic print. With half sleeves and a classic round neck, it’s ideal for casual everyday wear.
+  </p>
+
+  <h3 className={styles.h2_heading}>FAQs – Bewakoof Black Cotton Tee</h3>
+
+  <p className={styles.paragraph}><strong>Q:</strong> Is the graphic print durable?<br />
+  <strong>A:</strong> Most users found the print long-lasting, but avoid harsh detergents and high-heat ironing.</p>
+
+  <p className={styles.paragraph}><strong>Q:</strong> How is the fabric quality?<br />
+  <strong>A:</strong> The single jersey 100% cotton is soft, breathable, and well-suited for Indian weather.</p>
+
+  <p className={styles.paragraph}><strong>Q:</strong> Does it shrink after washing?<br />
+  <strong>A:</strong> No major shrinkage reported, though users suggest washing in cold water for best results.</p>
+
+  <h3 className={styles.h2_heading}>Customer Feedback Highlights</h3>
+
+  <ul className={styles.paragraph}>
+    <li><strong>★★★★☆</strong> “Very good quality product. The print was amazing and fit was perfect.” – <em>Rishi Borse</em></li>
+    <li><strong>★★★☆☆</strong> “Nice t-shirt but the print color felt too light.” – <em>Shubham Basantani</em></li>
+  </ul>
+</div>
+
+</div>
 
 
 
