@@ -340,96 +340,88 @@ const MensTshirts = () => {
   <li><strong>★★★★★</strong> “The fabric is comfy and the print looks nice. Value for money.” – <em>Buddh Verma</em></li>
   <li><strong>★★★☆☆</strong> “Print placement was slightly off, falling below chest area.” – <em>Amazon Customer</em></li>
 </ul>
-
-
-
-
    </div>
 
-{/* Product Three */}
-<div>
+    {/* Product Three */}
+    <div>
+    <h3 className={styles.h2_heading}>
+        Bewakoof "Black Cotton Regular Fit" Graphic Tee
+    </h3>
 
-<div>
-  <h3 className={styles.h2_heading}>
-    Bewakoof "Black Cotton Regular Fit" Graphic Tee
-  </h3>
+    <div style={{ paddingTop: '0px' }}>
+        <ImageViewer images={BewakoofProductThree} />
+    </div>
 
-  <div style={{ paddingTop: '0px' }}>
-    <ImageViewer images={BewakoofProductThree} />
-  </div>
-
-  {/* Amazon link */}
-  <div
-    style={{
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      marginTop: "20px",
-      width: "100%",
-    }}
-  >
-    <a
-      href="https://amzn.to/4l3XO7Q" // Replace with your actual affiliate link
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{
-        display: "inline-block",
-        backgroundColor: "#FF9900",
-        color: "#111",
-        fontWeight: "bold",
-        fontSize: "16px",
-        padding: "12px 24px",
-        textAlign: "center",
-        textDecoration: "none",
-        borderRadius: "8px",
-        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-        transition: "background-color 0.3s ease, transform 0.2s ease",
-        maxWidth: "100%",
-      }}
+    {/* Amazon link */}
+    <div
+        style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "20px",
+        width: "100%",
+        }}
     >
-      🛒 Buy on Amazon
-    </a>
-  </div>
+        <a
+        href="https://amzn.to/4l3XO7Q" // Replace with your actual affiliate link
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+            display: "inline-block",
+            backgroundColor: "#FF9900",
+            color: "#111",
+            fontWeight: "bold",
+            fontSize: "16px",
+            padding: "12px 24px",
+            textAlign: "center",
+            textDecoration: "none",
+            borderRadius: "8px",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            transition: "background-color 0.3s ease, transform 0.2s ease",
+            maxWidth: "100%",
+        }}
+        >
+        🛒 Buy on Amazon
+        </a>
+    </div>
 
-  <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
-    Price: ₹399 <span style={{ fontSize: "13px", fontWeight: "normal" }}> (60% Off – Limited Deal)</span>
-  </p>
+    <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
+        Price: ₹399 <span style={{ fontSize: "13px", fontWeight: "normal" }}> (60% Off – Limited Deal)</span>
+    </p>
 
-  <p className={styles.paragraph}>
-    Size: S, XL (Others Currently Unavailable)
-  </p>
+    <p className={styles.paragraph}>
+        Size: S, XL (Others Currently Unavailable)
+    </p>
 
-  <p className={styles.paragraph}>
-    Colors: Black
-  </p>
+    <p className={styles.paragraph}>
+        Colors: Black
+    </p>
 
-  <p className={styles.paragraph}>
-    <span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>
-      Description:
-    </span>
-    This regular fit black graphic tee from Bewakoof is made with 100% single jersey cotton. It’s soft, breathable, and features a bold front graphic print. With half sleeves and a classic round neck, it’s ideal for casual everyday wear.
-  </p>
+    <p className={styles.paragraph}>
+        <span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>
+        Description:
+        </span>
+        This regular fit black graphic tee from Bewakoof is made with 100% single jersey cotton. It’s soft, breathable, and features a bold front graphic print. With half sleeves and a classic round neck, it’s ideal for casual everyday wear.
+    </p>
 
-  <h3 className={styles.h2_heading}>FAQs – Bewakoof Black Cotton Tee</h3>
+    <h3 className={styles.h2_heading}>FAQs – Bewakoof Black Cotton Tee</h3>
 
-  <p className={styles.paragraph}><strong>Q:</strong> Is the graphic print durable?<br />
-  <strong>A:</strong> Most users found the print long-lasting, but avoid harsh detergents and high-heat ironing.</p>
+    <p className={styles.paragraph}><strong>Q:</strong> Is the graphic print durable?<br />
+    <strong>A:</strong> Most users found the print long-lasting, but avoid harsh detergents and high-heat ironing.</p>
 
-  <p className={styles.paragraph}><strong>Q:</strong> How is the fabric quality?<br />
-  <strong>A:</strong> The single jersey 100% cotton is soft, breathable, and well-suited for Indian weather.</p>
+    <p className={styles.paragraph}><strong>Q:</strong> How is the fabric quality?<br />
+    <strong>A:</strong> The single jersey 100% cotton is soft, breathable, and well-suited for Indian weather.</p>
 
-  <p className={styles.paragraph}><strong>Q:</strong> Does it shrink after washing?<br />
-  <strong>A:</strong> No major shrinkage reported, though users suggest washing in cold water for best results.</p>
+    <p className={styles.paragraph}><strong>Q:</strong> Does it shrink after washing?<br />
+    <strong>A:</strong> No major shrinkage reported, though users suggest washing in cold water for best results.</p>
 
-  <h3 className={styles.h2_heading}>Customer Feedback Highlights</h3>
+    <h3 className={styles.h2_heading}>Customer Feedback Highlights</h3>
 
-  <ul className={styles.paragraph}>
-    <li><strong>★★★★☆</strong> “Very good quality product. The print was amazing and fit was perfect.” – <em>Rishi Borse</em></li>
-    <li><strong>★★★☆☆</strong> “Nice t-shirt but the print color felt too light.” – <em>Shubham Basantani</em></li>
-  </ul>
-</div>
-
-</div>
+    <ul className={styles.paragraph}>
+        <li><strong>★★★★☆</strong> “Very good quality product. The print was amazing and fit was perfect.” – <em>Rishi Borse</em></li>
+        <li><strong>★★★☆☆</strong> “Nice t-shirt but the print color felt too light.” – <em>Shubham Basantani</em></li>
+    </ul>
+    </div>
 
 
 
