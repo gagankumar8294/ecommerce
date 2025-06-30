@@ -6,7 +6,7 @@ const Footer = () => {
         <footer style={styles.footer}>
             <div style={styles.container}>
                 <div style={styles.logo}>
-                    <h2>CodeAspirant</h2>
+                    <h2>ElitePurchase</h2>
                 </div>
                 <div style={styles.links}>
                     <Link href="/terms" style={styles.link}>
@@ -15,10 +15,10 @@ const Footer = () => {
                     <Link href="/privacy" style={styles.link}>
                         Privacy Policy
                     </Link>
-                    <a href="tel:+1234567890" style={styles.link}>Contact: +919148644611</a>
+                    <a href="tel:+1234567890" style={styles.link}>Contact: +918123650146</a>
                 </div>
                 <div style={styles.copyright}>
-                    &copy; 2024 CodeAspirant. All rights reserved.
+                    &copy; 2025 ElitePurchase. All rights reserved.
                 </div>
             </div>
         </footer>
