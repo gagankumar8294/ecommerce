@@ -1,39 +1,39 @@
 const menProducts = [
     {
       id: 1,
-      title: "Men's Cotton T-Shirt",
-      price: "₹499",
+      title: "Bewakoof 'Adventure' Graphic Tee",
+      price: "₹540",
       images: [
-        "https://m.media-amazon.com/images/I/61wlEyqfRwL._SY550_.jpg",
+        "/blog_images/mens/blog1-10/bog1-images/bewakoof/adventure/bewakoof-red-adevnture-graphic-print-tshirt-men.jpg",
       ],
       link: 'https://amzn.to/3T4niWs'
     },
     {
       id: 2,
-      title: "Men's Slim Fit Jeans",
-      price: "₹999",
+      title: "Bewakoof 'Lost in the Mountains' Graphic Tee",
+      price: "₹398",
       images: [
-        "https://m.media-amazon.com/images/I/61wlEyqfRwL._SY550_.jpg",
+        "/blog_images/mens/blog1-10/bog1-images/bewakoof/travel/-traveler-lover-bewakoof-black-graphic-print-tshirt-men.jpg",
       ],
-      link: 'amazon.com'
+      link: 'https://amzn.to/3T4niWs'
     },
     {
       id: 3,
-      title: "Men's Leather Jacket",
-      price: "₹2999",
+      title: "Bewakoof NASA - i need my space Graphic Tee",
+      price: "₹449",
       images: [
-        "https://m.media-amazon.com/images/I/61wlEyqfRwL._SY550_.jpg",
+        "/blog_images/mens/blog1-10/bog1-images/bewakoof/nasa/bewakoof-i-needspace-red-graphic-print-tshirt-men.jpg",
       ],
-      link: 'amazon.com'
+      link: 'https://amzn.to/3T4niWs'
     },
     {
       id: 4,
       title: "Men's Jacket",
-      price: "₹2999",
+      price: "₹399",
       images: [
-        "https://m.media-amazon.com/images/I/61wlEyqfRwL._SY550_.jpg",
+        "/blog_images/mens/blog1-10/bog1-images/bewakoof/anime/bewakoof-black-graphic-print-tshirt-men.jpg",
       ],
-      link: 'amazon.com'
+      link: 'https://amzn.to/3T4niWs'
     },
   ];
   

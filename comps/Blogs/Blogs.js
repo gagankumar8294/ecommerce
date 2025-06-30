@@ -1,4 +1,3 @@
-// src/components/Blogs.js
 import React, { useEffect, useState } from "react";
 import styles from './Blogs.module.css';
 import style from './Blogcard.module.css';
@@ -10,16 +9,19 @@ function Blogs() {
     const router = useRouter();
 
     useEffect(() => {
-        // Simulate loading delay (optional)
         setTimeout(() => {
-            // Sort by createdOn descending
             const sortedBlogs = [...blogsData].sort((a, b) => b.createdOn - a.createdOn);
             setBlogs(sortedBlogs);
         }, 500);
     }, []);
 
     const handleReadMore = (blog) => {
-        router.push(`/blog/${blog.slug}`);
+        const customUrlSection = blog.sections.find((s) => s.type === "url");
+        if (customUrlSection?.value) {
+            router.push(customUrlSection.value);
+        } else {
+            router.push(`/blog/${blog.slug}`);
+        }
     };
 
     return (
@@ -36,7 +38,7 @@ function Blogs() {
                         return (
                             <div className={style.blogCard} key={blog.id}>
                                 {firstImage && (
-                                    <img src={firstImage.value} alt="Blog Image - codeaspirant" />
+                                    <img src={firstImage.value} alt={firstImage.alt || "Blog Image - ElitePurchase"} />
                                 )}
                                 {firstTitle && <h3>{firstTitle.value}</h3>}
                                 <button onClick={() => handleReadMore(blog)} className={style.readMore}>

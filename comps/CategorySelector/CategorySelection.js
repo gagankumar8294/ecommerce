@@ -1,12 +1,14 @@
+// src/comps/CategorySelector/CategorySelector.js
 import React, { useState } from "react";
 import styles from "./CategorySelector.module.css";
 import { useRouter } from "next/navigation";
 
-// Import category products
+// Product data imports
 import menProducts from "./data/menProducts";
 import womenProducts from "./data/womenProducts";
 import electronicsProducts from "./data/electronicsProducts";
 
+// Category-product mapping
 const products = {
   men: menProducts,
   women: womenProducts,
@@ -23,9 +25,10 @@ export default function CategorySelector() {
 
   return (
     <div className={styles.container}>
+      {/* Category buttons */}
       <div className={styles.buttonRow}>
         <div className={styles.leftButtons}>
-          {["men", "women", "electronics"].map((category) => (
+          {Object.keys(products).map((category) => (
             <button
               key={category}
               className={`${styles.categoryButton} ${
@@ -44,6 +47,7 @@ export default function CategorySelector() {
         </div>
       </div>
 
+      {/* Product list */}
       <div className={styles.productList}>
         {products[selectedCategory].map((item) => (
           <div key={item.id} className={styles.productCard}>
@@ -52,7 +56,7 @@ export default function CategorySelector() {
                 <img
                   key={index}
                   src={img}
-                  alt={`view ${index + 1}`}
+                  alt={`Image of ${item.title}`}
                   className={styles.thumbnail}
                 />
               ))}
@@ -65,7 +69,7 @@ export default function CategorySelector() {
               rel="noopener noreferrer"
               className={styles.buyButton}
             >
-              Buy from Amazon
+              🛒 Buy from Amazon
             </a>
           </div>
         ))}
