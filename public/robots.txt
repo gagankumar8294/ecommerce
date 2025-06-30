@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://elitepurchase.in/
+
+# Sitemaps
+Sitemap: https://elitepurchase.in/sitemap.xml
