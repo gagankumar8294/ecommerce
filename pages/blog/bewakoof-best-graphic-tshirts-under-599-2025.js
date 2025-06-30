@@ -98,15 +98,15 @@ const MensTshirts = () => {
 {/* <!-- Open Graph / Facebook --> */}
 <meta property="og:title" content="Top 5 Trending Bewakoof T-Shirts Under ₹599 in India – 2025 Edition" />
 <meta property="og:description" content="Explore the most stylish and affordable Bewakoof t-shirts under ₹599. Perfect for casual wear, these tees feature bold graphics and comfy cotton." />
-<meta property="og:image" content="https://yourdomain.com/blog_images/mens/blog1-10/bog1-images/featuredimage/graphic-tshirts-under-599-2025.jpg" />
-<meta property="og:url" content="https://yourdomain.com/blog/bewakoof-tshirts-under-599" />
+<meta property="og:image" content="https://elitepurchase.in/blog_images/mens/blog1-10/bog1-images/featuredimage/graphic-tshirts-under-599-2025.jpg" />
+<meta property="og:url" content="https://elitepurchase.in/blog/bewakoof-tshirts-under-599" />
 <meta property="og:type" content="article" />
 
 {/* <!-- Twitter --> */}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Top 5 Trending Bewakoof T-Shirts Under ₹599 in India – 2025 Edition" />
 <meta name="twitter:description" content="Check out our curated list of top-rated Bewakoof cotton t-shirts under ₹599 – stylish, affordable, and perfect for streetwear lovers in 2025." />
-<meta name="twitter:image" content="https://yourdomain.com/blog_images/mens/blog1-10/bog1-images/featuredimage/bewakoof-graphic-tshirts-under-599-2025.jpg" />
+<meta name="twitter:image" content="https://elitepurchase.in/blog_images/mens/blog1-10/bog1-images/featuredimage/bewakoof-graphic-tshirts-under-599-2025.jpg" />
 
 </Head>
 
@@ -749,7 +749,7 @@ const MensTshirts = () => {
             {/* <h4>Left Secion</h4> */}
         </div>
         <div className='just_type_it'>
-          <FacebookComments href="https://elitepurchase.vercel.app/blog/top-7-oversized-printed-t-shirts-Under-599-in-2025" />
+          <FacebookComments href="https://elitepurchase.in/blog/top-7-oversized-printed-t-shirts-Under-599-in-2025" />
         </div>
         <div className='right_ad_posts'>
             {/* <h4>right Secion</h4> */}
