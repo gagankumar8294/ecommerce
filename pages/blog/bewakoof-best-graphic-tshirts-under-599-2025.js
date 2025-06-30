@@ -6,39 +6,63 @@ import Image from 'next/image';
 import Head from 'next/head';
 import ImageViewer from '@/comps/viewer/ImageViewer';
 
-// const imageList = [
-//   { src: '/viewer/img1.png', alt: 'Front view of the fashion product' },
-//   { src: '/viewer/img2.png', alt: 'Side view showcasing fabric texture' },
-//   { src: '/viewer/img3.png', alt: 'Detailed view of design elements' },
-// ];
-
 const BewakoofProductOne = [
-  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/adventure/bewakoof-red-adevnture-graphic-print-tshirt-men.jpg', alt: 'Front view of the fashion product' },
-  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/adventure/bewakoof-regular-fit-round-neck-cotton-tshirt.jpg', alt: 'Side view showcasing fabric texture' },
+  {
+    src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/adventure/bewakoof-red-adevnture-graphic-print-tshirt-men.jpg',
+    alt: 'Bewakoof red adventure graphic printed t-shirt for men – front view',
+  },
+  {
+    src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/adventure/bewakoof-regular-fit-round-neck-cotton-tshirt.jpg',
+    alt: 'Regular fit cotton t-shirt from Bewakoof with adventure print – side angle',
+  },
 ];
 
 const BewakoofProductTwo = [
-  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/regular/bewakoof-mens-graphic-print-regular-fit-t-shirt-2.jpg', alt: 'Side view showcasing fabric texture' },
-  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/regular/bewakoof-mens-graphic-print-regular-fit-t-shirt.jpg', alt: 'Front view of the fashion product' },
-  
+  {
+    src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/regular/bewakoof-mens-graphic-print-regular-fit-t-shirt-2.jpg',
+    alt: 'Side view of Bewakoof regular fit graphic t-shirt for men in black',
+  },
+  {
+    src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/regular/bewakoof-mens-graphic-print-regular-fit-t-shirt.jpg',
+    alt: 'Front view of Bewakoof men’s black graphic cotton t-shirt – casual style',
+  },
 ];
 
 const BewakoofProductThree = [
-    { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/anime/bewakoof-black-graphic-print-tshirt-men.jpg', alt: 'Side view showcasing fabric texture' },
-    
-]
+  {
+    src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/anime/bewakoof-black-graphic-print-tshirt-men.jpg',
+    alt: 'Bewakoof anime-style black cotton graphic t-shirt for men – side view',
+  },
+];
+
 
 const BewakoofNASAProduct = [
-  { src : '/blog_images/mens/blog1-10/bog1-images/bewakoof/nasa/bewakoof-i-needspace-red-graphic-print-tshirt-men.jpg'},
-  { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/nasa/bewakoof-red-nasa-graphic-print-tshirt-men.jpg', alt: 'Side view showcasing fabric texture' },
+  {
+    src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/nasa/bewakoof-i-needspace-red-graphic-print-tshirt-men.jpg',
+    alt: 'Red NASA theme t-shirt for men by Bewakoof with I Need Space print – front view',
+  },
+  {
+    src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/nasa/bewakoof-red-nasa-graphic-print-tshirt-men.jpg',
+    alt: 'Side view of Bewakoof NASA official red cotton graphic tee – men’s casual wear',
+  },
 ];
 
 
 const BewakoofLostMountainImages = [
-    { src : '/blog_images/mens/blog1-10/bog1-images/bewakoof/travel/-traveler-lover-bewakoof-black-graphic-print-tshirt-men.jpg'},
-    { src : '/blog_images/mens/blog1-10/bog1-images/bewakoof/travel/bewakoof-travele-mountain-graphic-print-tshirt.jpg'},
-    { src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/travel/bewakoof-black-travweling-lost-in-mountain-graphic-print-tshirt-men.jpg', alt: 'Side view showcasing fabric texture' },
-]
+  {
+    src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/travel/-traveler-lover-bewakoof-black-graphic-print-tshirt-men.jpg',
+    alt: 'Black Bewakoof t-shirt with Lost in the Mountains graphic print – front view',
+  },
+  {
+    src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/travel/bewakoof-travele-mountain-graphic-print-tshirt.jpg',
+    alt: 'Mountain-themed travel graphic printed cotton t-shirt by Bewakoof – for men',
+  },
+  {
+    src: '/blog_images/mens/blog1-10/bog1-images/bewakoof/travel/bewakoof-black-travweling-lost-in-mountain-graphic-print-tshirt-men.jpg',
+    alt: 'Side view of Lost in the Mountains travel print t-shirt by Bewakoof in black',
+  },
+];
+
 
 
 const MensTshirts = () => {
@@ -49,7 +73,7 @@ const MensTshirts = () => {
   }, []);
 
   const [currentUrl, setCurrentUrl] = useState('');
-  const blogTitle = "Another Product Joins the Google Graveyard";
+  const blogTitle = "Top 5 Bewakoof Graphic Printed T-Shirts for Men Under ₹599 in 2025";
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -66,29 +90,29 @@ const MensTshirts = () => {
     <div style={{paddingTop:"150px"}}>
 
 <Head>
-  <title>Another Product Joins the Google Graveyard | Elite Purchase</title>
-  <meta name="description" content="Explore why more apps are being shut down and joining the Google Graveyard. What's the strategy behind it?" />
-  <meta name="keywords" content="Google Graveyard, discontinued Google products, app shutdowns, Google news, tech blog" />
-  <meta name="author" content="CodeAspirant" />
+  <title>Top 5 Trending Bewakoof T-Shirts Under ₹599 in India – 2025 Edition | Elite Purchase</title>
+<meta name="description" content="Discover the top 5 trending Bewakoof t-shirts under ₹599 in India. Oversized, graphic, NASA-themed, and streetwear picks rated highly for comfort and style in 2025." />
+<meta name="keywords" content="Bewakoof t-shirts, oversized t-shirts under 599, trending graphic tees India 2025, NASA print t-shirts, fashion under budget, best cotton t-shirts 2025" />
+<meta name="author" content="elitepurchase" />
 
-  {/* Open Graph / Facebook */}
-  <meta property="og:title" content="Another Product Joins the Google Graveyard" />
-  <meta property="og:description" content="Explore why more apps are being shut down and joining the Google Graveyard." />
-  <meta property="og:image" content="https://yourdomain.com/path-to-image.jpg" />
-  <meta property="og:url" content="https://yourdomain.com/blog/google-graveyard" />
-  <meta property="og:type" content="article" />
+{/* <!-- Open Graph / Facebook --> */}
+<meta property="og:title" content="Top 5 Trending Bewakoof T-Shirts Under ₹599 in India – 2025 Edition" />
+<meta property="og:description" content="Explore the most stylish and affordable Bewakoof t-shirts under ₹599. Perfect for casual wear, these tees feature bold graphics and comfy cotton." />
+<meta property="og:image" content="https://yourdomain.com/blog_images/mens/blog1-10/bog1-images/featuredimage/graphic-tshirts-under-599-2025.jpg" />
+<meta property="og:url" content="https://yourdomain.com/blog/bewakoof-tshirts-under-599" />
+<meta property="og:type" content="article" />
 
-  {/* Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Another Product Joins the Google Graveyard" />
-  <meta name="twitter:description" content="Explore why more apps are being shut down and joining the Google Graveyard." />
-  <meta name="twitter:image" content="https://yourdomain.com/path-to-image.jpg" />
+{/* <!-- Twitter --> */}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Top 5 Trending Bewakoof T-Shirts Under ₹599 in India – 2025 Edition" />
+<meta name="twitter:description" content="Check out our curated list of top-rated Bewakoof cotton t-shirts under ₹599 – stylish, affordable, and perfect for streetwear lovers in 2025." />
+<meta name="twitter:image" content="https://yourdomain.com/blog_images/mens/blog1-10/bog1-images/featuredimage/bewakoof-graphic-tshirts-under-599-2025.jpg" />
 
 </Head>
 
       <div>
         <p className={styles.publish}>Published on June 29, 2025 In Endless Origins</p>
-        <h1 className={styles.main_heading}>Top 7 Oversized Printed T-Shirts Under ₹599 in 2025</h1>
+        <h1 className={styles.main_heading}>Top 5 Trending Bewakoof T-Shirts Under ₹599 in 2025</h1>
       </div>
 
 
@@ -167,7 +191,7 @@ const MensTshirts = () => {
       {/* Feature Image */}
       <div className={styles.image_border}>
         <Image className={styles.image_wh}
-          src="/blog_images/mens/blog1-10/bog1-images/featuredimage/graphic-tshirts-under-599-men-2025.jpg"
+          src="/blog_images/mens/blog1-10/bog1-images/featuredimage/bewakoof-graphic-tshirts-under-599-2025.jpg"
           alt="Example Image"
           width={1200}
           height={630}
@@ -277,7 +301,89 @@ const MensTshirts = () => {
   <li><strong>★★★☆☆</strong> “Fitting issue — too baggy if you're not into oversized style.” – <em>Souvik Ghosh</em></li>
 </ul>
     </div>    
+     {/* Product Five */}
+    <div>
+    <h3 className={styles.h2_heading}>
+        Bewakoof "Lost in the Mountains" Graphic Tee
+    </h3>
 
+    <div style={{ paddingTop: '0px' }}>
+        <ImageViewer images={BewakoofLostMountainImages} /> {/* Replace with your image array */}
+    </div>
+
+    {/* Amazon Link */}
+    <div
+        style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "20px",
+        width: "100%",
+        }}
+    >
+        <a
+        href="https://amzn.to/447KFVp" // Replace with your Amazon affiliate link
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+            display: "inline-block",
+            backgroundColor: "#FF9900",
+            color: "#111",
+            fontWeight: "bold",
+            fontSize: "16px",
+            padding: "12px 24px",
+            textAlign: "center",
+            textDecoration: "none",
+            borderRadius: "8px",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            transition: "background-color 0.3s ease, transform 0.2s ease",
+            maxWidth: "100%",
+        }}
+        >
+        🛒 Buy on Amazon
+        </a>
+    </div>
+
+    <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
+        Price: ₹398 <span style={{ fontSize: "13px", fontWeight: "normal" }}> (Limited Time Deal -64%)</span>
+    </p>
+
+    <p className={styles.paragraph}>
+        Size: S, M, L, XL, 2XL, 3XL
+    </p>
+
+    <p className={styles.paragraph}>
+        Colors: Black
+    </p>
+
+    <p className={styles.paragraph}>
+        <span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>
+        Description:
+        </span> 
+        Featuring a “Lost in the Mountains” travel-themed graphic, this tee is crafted from lightweight single jersey 100% cotton. Designed with a regular fit, it’s ideal for travel enthusiasts and mountain lovers who want to wear their passion.
+    </p>
+
+    <h3 className={styles.h2_heading}>FAQs – Bewakoof Travel Graphic Tee</h3>
+
+    <p className={styles.paragraph}><strong>Q:</strong> Is it good for summer and travel use?<br />
+        <strong>A:</strong> Yes, it’s breathable and soft, perfect for outdoor activities and road trips.</p>
+
+    <p className={styles.paragraph}><strong>Q:</strong> Does the print fade quickly?<br />
+        <strong>A:</strong> No, reviews show that the print stays clear even after multiple washes when cared for properly.</p>
+
+    <p className={styles.paragraph}><strong>Q:</strong> Is the fit perfect?<br />
+        <strong>A:</strong> Most customers found the fit good, but a few noted slightly loose or tight sizing depending on body type.</p>
+
+    <h3 className={styles.h2_heading}>Customer Feedback Highlights</h3>
+
+    <ul className={styles.paragraph}>
+        <li><strong>★★★★★</strong> “Product quality is good & print is superb.” – <em>Verified Purchase</em></li>
+        <li><strong>★★★★☆</strong> “Good fabric quality at this price. Fits well.” – <em>Vishal</em></li>
+        <li><strong>★★★★★</strong> “Perfect for travel lovers like me!” – <em>Sachin Rawat</em></li>
+        <li><strong>★★★☆☆</strong> “Decent quality but poor fit.” – <em>Nav Gill</em></li>
+        <li><strong>★☆☆☆☆</strong> “Cotton fibers come out during wash. Needs separate washing.” – <em>Sabari Giri</em></li>
+    </ul>
+    </div>
    {/* Product two */}
    <div>
     <h3 className={styles.h2_heading}>
@@ -524,89 +630,7 @@ const MensTshirts = () => {
     </div>
 
 
-      {/* Product Five */}
-    <div>
-    <h3 className={styles.h2_heading}>
-        Bewakoof "Lost in the Mountains" Graphic Tee
-    </h3>
-
-    <div style={{ paddingTop: '0px' }}>
-        <ImageViewer images={BewakoofLostMountainImages} /> {/* Replace with your image array */}
-    </div>
-
-    {/* Amazon Link */}
-    <div
-        style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        marginTop: "20px",
-        width: "100%",
-        }}
-    >
-        <a
-        href="https://amzn.to/447KFVp" // Replace with your Amazon affiliate link
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-            display: "inline-block",
-            backgroundColor: "#FF9900",
-            color: "#111",
-            fontWeight: "bold",
-            fontSize: "16px",
-            padding: "12px 24px",
-            textAlign: "center",
-            textDecoration: "none",
-            borderRadius: "8px",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-            transition: "background-color 0.3s ease, transform 0.2s ease",
-            maxWidth: "100%",
-        }}
-        >
-        🛒 Buy on Amazon
-        </a>
-    </div>
-
-    <p className={styles.paragraph} style={{ fontWeight: "bold", color: "#333" }}>
-        Price: ₹398 <span style={{ fontSize: "13px", fontWeight: "normal" }}> (Limited Time Deal -64%)</span>
-    </p>
-
-    <p className={styles.paragraph}>
-        Size: S, M, L, XL, 2XL, 3XL
-    </p>
-
-    <p className={styles.paragraph}>
-        Colors: Black
-    </p>
-
-    <p className={styles.paragraph}>
-        <span className={styles.paragraph_link} style={{ fontWeight: "bold", color: "#333" }}>
-        Description:
-        </span> 
-        Featuring a “Lost in the Mountains” travel-themed graphic, this tee is crafted from lightweight single jersey 100% cotton. Designed with a regular fit, it’s ideal for travel enthusiasts and mountain lovers who want to wear their passion.
-    </p>
-
-    <h3 className={styles.h2_heading}>FAQs – Bewakoof Travel Graphic Tee</h3>
-
-    <p className={styles.paragraph}><strong>Q:</strong> Is it good for summer and travel use?<br />
-        <strong>A:</strong> Yes, it’s breathable and soft, perfect for outdoor activities and road trips.</p>
-
-    <p className={styles.paragraph}><strong>Q:</strong> Does the print fade quickly?<br />
-        <strong>A:</strong> No, reviews show that the print stays clear even after multiple washes when cared for properly.</p>
-
-    <p className={styles.paragraph}><strong>Q:</strong> Is the fit perfect?<br />
-        <strong>A:</strong> Most customers found the fit good, but a few noted slightly loose or tight sizing depending on body type.</p>
-
-    <h3 className={styles.h2_heading}>Customer Feedback Highlights</h3>
-
-    <ul className={styles.paragraph}>
-        <li><strong>★★★★★</strong> “Product quality is good & print is superb.” – <em>Verified Purchase</em></li>
-        <li><strong>★★★★☆</strong> “Good fabric quality at this price. Fits well.” – <em>Vishal</em></li>
-        <li><strong>★★★★★</strong> “Perfect for travel lovers like me!” – <em>Sachin Rawat</em></li>
-        <li><strong>★★★☆☆</strong> “Decent quality but poor fit.” – <em>Nav Gill</em></li>
-        <li><strong>★☆☆☆☆</strong> “Cotton fibers come out during wash. Needs separate washing.” – <em>Sabari Giri</em></li>
-    </ul>
-    </div>
+ 
 
       
 
@@ -624,9 +648,9 @@ const MensTshirts = () => {
 
 
 
-      <p className={styles.paragraph}>
-        To updated with latest trendy outfits <strong>Follow</strong> Channel in Instagram <strong>Elite Purchase</strong> & be the first one to get  notified <strong>follow</strong>. to consigning its projects to the digital graveyard. From Google Inbox to Google+, to Stadia—the tech giant has a long and infamous history of shuttering loved apps and services. Today, another one bites the dust. 
-      </p>
+    <p className={styles.paragraph}>
+  🔥 Stay ahead in fashion! Follow our Instagram channel <strong>Elite Purchase</strong> for the latest drops in trendy t-shirts, exclusive offers, and style tips. Be the first to spot top-rated steals like these before they're gone!
+    </p>
 
 
 
@@ -687,34 +711,34 @@ const MensTshirts = () => {
 
 
     {/* Instagram Telegram */}
-      <section className={styles.community}>
-        <h4>2 Ways to Join Our Community</h4>
-        <div className={styles.download_our_app}>
-          <h3>Telegram Group</h3>
-          <p>Discover special offers, Top Products, upcoming blogs, and more.</p>
-          <h5>
-            <a href="https://t.me/techxpsky" target="_blank" rel="noopener noreferrer">
-                Join Telegram Channel
-            </a>
-          </h5>
-
-        </div>
+<section className={styles.community}>
+  <h4>🔥 Be Part of the ElitePurchase – 2 Ways to Stay Ahead!</h4>
+  <div className={styles.download_our_app}>
+    <h3>🚀 Join Our Telegram Channel</h3>
+    <p>Get exclusive first access to trending products, secret deals, upcoming blogs & fashion finds — all in one place!</p>
+    <h5>
+      <a href="https://t.me/techxpsky" target="_blank" rel="noopener noreferrer">
+        👉 Tap to Join Elite Purchase on Telegram
+      </a>
+    </h5>
+  </div>
         {/* DISCORD */}
         {/* <div className={styles.download_our_app}>
           <h3>Discord Server</h3>
           <p>Stay Connected with a larger ecosystem of data science and ML Professionals</p>
         </div> */}
 
-        {/* Instagram */}
-        <div className={styles.download_our_app}>
-          <h3>Instagram Page</h3>
-          <p>Just one click in stories you will be buying latest outfits.</p>
-          <h5>
-            <a href="https://www.instagram.com/elitepurchase.founder?igsh=NGNuMmhzd2xkazBi" target="_blank" rel="noopener noreferrer">
-                Follow Instagram Page
-            </a>
-          </h5>
-        </div>
+       {/* Instagram */}
+<div className={styles.download_our_app}>
+  <h3>📸 Follow Us on Instagram</h3>
+  <p>Get daily fashion inspiration, exclusive product drops, and limited-time offers straight from our stories. Your next favorite outfit is just one tap away!</p>
+  <h5>
+    <a href="https://www.instagram.com/elitepurchase.founder?igsh=NGNuMmhzd2xkazBi" target="_blank" rel="noopener noreferrer">
+      👉 Follow @elitepurchase on Instagram
+    </a>
+  </h5>
+</div>
+
       </section>
 
 
