@@ -107,7 +107,7 @@ const MensTshirts = () => {
 <meta name="twitter:title" content="Top 5 Trending Bewakoof T-Shirts Under ₹599 in India – 2025 Edition" />
 <meta name="twitter:description" content="Check out our curated list of top-rated Bewakoof cotton t-shirts under ₹599 – stylish, affordable, and perfect for streetwear lovers in 2025." />
 <meta name="twitter:image" content="https://elitepurchase.in/blog_images/mens/blog1-10/bog1-images/featuredimage/bewakoof-graphic-tshirts-under-599-2025.jpg" />
-
+<meta name="twitter:image:alt" content="Graphic T-Shirt from Bewakoof featuring stylish print under ₹599 for men in India - 2025" />
 </Head>
 
       <div>
