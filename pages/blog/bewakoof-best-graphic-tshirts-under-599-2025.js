@@ -124,7 +124,8 @@ const MensTshirts = () => {
       "image": "https://elitepurchase.in/blog_images/mens/blog1-10/bog1-images/featuredimage/bewakoof-graphic-tshirts-under-599-2025.jpg",
       "author": {
         "@type": "Person",
-        "name": "Elite Purchase"
+        "name": "Elite Purchase",
+        "url": "https://elitepurchase.in"
       },
       "publisher": {
         "@type": "Organization",
@@ -134,8 +135,8 @@ const MensTshirts = () => {
           "url": "https://elitepurchase.in/logo.png"
         }
       },
-      "datePublished": "2025-06-29",
-      "dateModified": "2025-06-29"
+      "datePublished": "2025-06-29T09:00:00+05:30",
+      "dateModified": "2025-06-29T09:00:00+05:30"
     })
   }}
 />
