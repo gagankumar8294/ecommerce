@@ -1,6 +1,14 @@
 # *
 User-agent: *
 Allow: /
+Allow: /_next/
+Allow: /static/
+Allow: *.js
+Allow: *.css
+Allow: *.png
+Allow: *.svg
+Allow: *.jpg
+
 
 # Host
 Host: https://elitepurchase.in/
