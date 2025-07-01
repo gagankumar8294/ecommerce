@@ -108,6 +108,39 @@ const MensTshirts = () => {
 <meta name="twitter:description" content="Check out our curated list of top-rated Bewakoof cotton t-shirts under ₹599 – stylish, affordable, and perfect for streetwear lovers in 2025." />
 <meta name="twitter:image" content="https://elitepurchase.in/blog_images/mens/blog1-10/bog1-images/featuredimage/bewakoof-graphic-tshirts-under-599-2025.jpg" />
 <meta name="twitter:image:alt" content="Graphic T-Shirt from Bewakoof featuring stylish print under ₹599 for men in India - 2025" />
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://elitepurchase.in/blog/bewakoof-best-graphic-tshirts-under-599-2025"
+      },
+      "headline": "Top 5 Bewakoof Graphic Printed T-Shirts for Men Under ₹599 in 2025",
+      "description": "Discover the top 5 trending Bewakoof t-shirts under ₹599 in India. Oversized, graphic, NASA-themed, and streetwear picks rated highly for comfort and style in 2025.",
+      "image": "https://elitepurchase.in/blog_images/mens/blog1-10/bog1-images/featuredimage/bewakoof-graphic-tshirts-under-599-2025.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Elite Purchase"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Elite Purchase",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://elitepurchase.in/logo.png"
+        }
+      },
+      "datePublished": "2025-06-29",
+      "dateModified": "2025-06-29"
+    })
+  }}
+/>
+
+
 </Head>
 
       <div>
