@@ -226,7 +226,7 @@ const MensTshirts = () => {
       <div className={styles.image_border}>
         <Image className={styles.image_wh}
           src="/blog_images/mens/blog1-10/bog1-images/featuredimage/bewakoof-graphic-tshirts-under-599-2025.jpg"
-          alt="Example Image"
+          alt="Brandlook Graphic Tees for Men 2025"
           width={1200}
           height={630}
           quality={100}
@@ -248,7 +248,7 @@ const MensTshirts = () => {
       </div> */}
 
     <h2 className={styles.h2_heading}>
-        1. Bewakoof Graphic Tees
+        Bewakoof Graphic Tees
     </h2>
     <p className={styles.paragraph}>
         Bewakoof is one of the most loved brands when it comes to affordable, bold, and comfortable graphic tees. Here's one of their top-selling picks for 2025:
