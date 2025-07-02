@@ -19,7 +19,7 @@ const blogsData = [
         { type: "title", value: "Cotton & Viscose Kurta Sets Under ₹1000 – Office & Daily Wear 2025" },
         { type: "image", value: "blog_images/women/blog1-10/kurthi-blog1-images/featuredimage/affordable-printed-kurti-sunfashion-under-500-2025.jpg", alt: "Blog 1 Image" },
         // { type: "paragraph", value: "stylish graphic tees that go well with jeans." },
-        { type: "url", value: "https://https://elitepurchase.in/blog/cotton-viscose-kurta-sets-under-1000-2025"}
+        { type: "url", value: "https://elitepurchase.in/blog/cotton-viscose-kurta-sets-under-1000-2025"}
       ],
     },
     
