@@ -825,7 +825,7 @@ const MensTshirts = () => {
             {/* <h4>Left Secion</h4> */}
         </div>
         <div className='just_type_it'>
-          <FacebookComments href="https://elitepurchase.in/blog/cotton-viscose-kurta-sets-under-1000-2025.js" />
+          <FacebookComments href="https://elitepurchase.in/blog/cotton-viscose-kurta-sets-under-1000-2025" />
         </div>
         <div className='right_ad_posts'>
             {/* <h4>right Secion</h4> */}
