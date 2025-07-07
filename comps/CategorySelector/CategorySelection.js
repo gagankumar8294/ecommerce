@@ -6,13 +6,13 @@ import { useRouter } from "next/navigation";
 // Product data imports
 import menProducts from "./data/menProducts";
 import womenProducts from "./data/womenProducts";
-import electronicsProducts from "./data/electronicsProducts";
+// import electronicsProducts from "./data/electronicsProducts";
 
 // Category-product mapping
 const products = {
   men: menProducts,
   women: womenProducts,
-  electronics: electronicsProducts,
+  // electronics: electronicsProducts,
 };
 
 export default function CategorySelector() {
@@ -41,9 +41,9 @@ export default function CategorySelector() {
           ))}
         </div>
         <div className={styles.rightButton}>
-          <button className={styles.seeAllButton} onClick={handleSeeAll}>
+          {/* <button className={styles.seeAllButton} onClick={handleSeeAll}>
             See All
-          </button>
+          </button> */}
         </div>
       </div>
 
