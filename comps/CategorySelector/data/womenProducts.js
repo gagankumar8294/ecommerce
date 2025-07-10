@@ -43,6 +43,42 @@ const womenProducts = [
       ],
       link: "https://amzn.to/4lrpCTw"
     },
+    {
+      id: 6,
+      title: "Long Kurti for Women – Stylish Ankle-Length Gown with Shirt Collar",
+      price: "₹895",
+      images: [
+        "/blog_images/women/blog1-10/anarkali/product1/rayon-ankle-length-kurti-side-profile.png",
+      ],
+      link: "https://amzn.to/44H6biT"
+    },
+    {
+      id: 7,
+      title: "Black Anarkali Shrug Style Embroidered Kurta for Women",
+      price: "₹859",
+      images: [
+        "/blog_images/women/blog1-10/anarkali/product2/black-anarkali-kurta-closeup.png",
+      ],
+      link: "https://amzn.to/4nZ6zlR"
+    },
+    {
+      id: 8,
+      title: "LookMark Chikankari Anarkali Kurti Gown – Cotton Blend, Calf Length, Regular Fit",
+      price: "₹549 - ₹759",
+      images: [
+        "/blog_images/women/blog1-10/anarkali/product3/lookmark-anarkali-kurti-closeup.png",
+      ],
+      link: "https://amzn.to/40KDkc8"
+    },
+    {
+      id: 9,
+      title: "Embroidered Rayon Anarkali Kurta – Flared Long Gown with Mandarin Collar",
+      price: "₹701",
+      images: [
+        "/blog_images/women/blog1-10/anarkali/product4/anarkali-kurta-back-side.png",
+      ],
+      link: "https://amzn.to/3TuBJn1"
+    },
   ];
   
   export default womenProducts;
