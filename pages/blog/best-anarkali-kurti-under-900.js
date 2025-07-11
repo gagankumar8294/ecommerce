@@ -61,7 +61,7 @@ const MensTshirts = () => {
   }, []);
 
   const [currentUrl, setCurrentUrl] = useState('');
-  const blogTitle = "Cotton & Viscose Kurta Sets Under ₹1000 – Office & Daily Wear 2025";
+  const blogTitle = "best-anarkali-kurti-under-900";
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -85,7 +85,7 @@ const MensTshirts = () => {
   {/* <!-- Open Graph / Facebook --> */}
   <meta property="og:title" content="Top Anarkali & Kurti Styles Under ₹900 – Amazon Limited Time Deals 2025" />
   <meta property="og:description" content="Discover trending Anarkali gowns and rayon kurtis for women under ₹900 from Amazon – featuring elegant Chikankari, A-line, and shrug styles. Limited-time deals up to 80% off!" />
-  <meta property="og:image" content="https://elitepurchase.in/blog_images/women/blog1-10/kurthi-blog2-images/featuredimage/best-anarkali-kurti-deals-under-900-2025.jpg" />
+  <meta property="og:image" content="https://elitepurchase.in/blog_images/women/blog1-10/anarkali/featuredimage/top-trending-rayon-kurtis-under-1000-amazon-deal-prime-day.jpg" />
   <meta property="og:url" content="https://elitepurchase.in/blog/best-anarkali-kurti-under-900-amazon-deals" />
   <meta property="og:type" content="article" />
 
@@ -93,7 +93,7 @@ const MensTshirts = () => {
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Top Anarkali & Kurti Styles Under ₹900 – Amazon Limited Time Deals 2025" />
   <meta name="twitter:description" content="Get the best deals on trending ethnic wear for women – Anarkali, A-line, and shrug-style kurtis under ₹900. Shop now from Amazon before the sale ends!" />
-  <meta name="twitter:image" content="https://elitepurchase.in/blog_images/women/blog1-10/kurthi-blog2-images/featuredimage/best-anarkali-kurti-deals-under-900-2025.jpg" />
+  <meta name="twitter:image" content="https://elitepurchase.in/blog_images/women/blog1-10/anarkali/featuredimage/top-trending-rayon-kurtis-under-1000-amazon-deal-prime-day.jpg" />
   <meta name="twitter:image:alt" content="Anarkali and kurti fashion for women under ₹900 – Amazon deals 2025" />
 
   <script
@@ -109,7 +109,7 @@ const MensTshirts = () => {
         "keywords": "anarkali gown under 900, chikankari kurti amazon deal, rayon a-line kurti, shrug style kurta 2025, amazon ethnic wear discount",
         "headline": "Top Anarkali & Kurti Styles Under ₹900 – Amazon Limited Time Deals 2025",
         "description": "Shop the most trending Anarkali and kurti styles under ₹900 for women – featuring Chikankari embroidery, rayon A-line cuts, and shrug-style elegance. Ideal for festive, office, or casual wear. Discounts up to 80% on Amazon now!",
-        "image": "https://elitepurchase.in/blog_images/women/blog1-10/kurthi-blog2-images/featuredimage/best-anarkali-kurti-deals-under-900-2025.jpg",
+        "image": "https://elitepurchase.in/blog_images/women/blog1-10/anarkali/featuredimage/top-trending-rayon-kurtis-under-1000-amazon-deal-prime-day.jpg",
         "author": {
           "@type": "Person",
           "name": "Elite Purchase",
@@ -625,14 +625,14 @@ const MensTshirts = () => {
               </a>
             </li>
             <li>
-              <a href="whatsapp://send?text=Check out this amazing blog post: [Blog Title] [Blog URL]">
+              <a href="whatsapp://send?text= [Blog Title] [Blog URL]">
                 <svg className={styles.svg} version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                   <path d="M27.281 4.65c-2.994-3-6.975-4.65-11.219-4.65-8.738 0-15.85 7.112-15.85 15.856 0 2.794 0.731 5.525 2.119 7.925l-2.25 8.219 8.406-2.206c2.319 1.262 4.925 1.931 7.575 1.931h0.006c0 0 0 0 0 0 8.738 0 15.856-7.113 15.856-15.856 0-4.238-1.65-8.219-4.644-11.219zM16.069 29.050v0c-2.369 0-4.688-0.637-6.713-1.837l-0.481-0.288-4.987 1.306 1.331-4.863-0.313-0.5c-1.325-2.094-2.019-4.519-2.019-7.012 0-7.269 5.912-13.181 13.188-13.181 3.519 0 6.831 1.375 9.319 3.862 2.488 2.494 3.856 5.8 3.856 9.325-0.006 7.275-5.919 13.188-13.181 13.188zM23.294 19.175c-0.394-0.2-2.344-1.156-2.706-1.288s-0.625-0.2-0.894 0.2c-0.262 0.394-1.025 1.288-1.256 1.556-0.231 0.262-0.462 0.3-0.856 0.1s-1.675-0.619-3.188-1.969c-1.175-1.050-1.975-2.35-2.206-2.744s-0.025-0.613 0.175-0.806c0.181-0.175 0.394-0.463 0.594-0.694s0.262-0.394 0.394-0.662c0.131-0.262 0.069-0.494-0.031-0.694s-0.894-2.15-1.219-2.944c-0.319-0.775-0.65-0.669-0.894-0.681-0.231-0.012-0.494-0.012-0.756-0.012s-0.694 0.1-1.056 0.494c-0.363 0.394-1.387 1.356-1.387 3.306s1.419 3.831 1.619 4.1c0.2 0.262 2.794 4.269 6.769 5.981 0.944 0.406 1.681 0.65 2.256 0.837 0.95 0.3 1.813 0.256 2.494 0.156 0.762-0.113 2.344-0.956 2.675-1.881s0.331-1.719 0.231-1.881c-0.094-0.175-0.356-0.275-0.756-0.475z"></path>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="mailto:?subject=[Email Subject]&body=Check out this amazing blog post: [Blog Title] [Blog URL]">
+              <a href="mailto:?subject=[3 Best-Selling Anarkali & Kurti Styles Under ₹900]&body= [Blog Title] [Blog URL]">
                 <svg className={styles.svg} version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                   <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM8 8h16c0.286 0 0.563 0.061 0.817 0.177l-8.817 10.286-8.817-10.287c0.254-0.116 0.531-0.177 0.817-0.177zM6 22v-12c0-0.042 0.002-0.084 0.004-0.125l5.864 6.842-5.8 5.8c-0.045-0.167-0.069-0.34-0.069-0.517zM24 24h-16c-0.177 0-0.35-0.024-0.517-0.069l5.691-5.691 2.826 3.297 2.826-3.297 5.691 5.691c-0.167 0.045-0.34 0.069-0.517 0.069zM26 22c0 0.177-0.024 0.35-0.069 0.517l-5.8-5.8 5.865-6.842c0.003 0.041 0.004 0.083 0.004 0.125v12z"></path>
                 </svg>
