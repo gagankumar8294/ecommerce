@@ -124,8 +124,8 @@ const MensTshirts = () => {
             "url": "https://elitepurchase.in/logo.png"
           }
         },
-        "datePublished": "2025-07-10T09:00:00+05:30",
-        "dateModified": "2025-07-10T09:00:00+05:30"
+        "datePublished": "2025-07-11T09:00:00+05:30",
+        "dateModified": "2025-07-11T09:00:00+05:30"
       })
     }}
   />
