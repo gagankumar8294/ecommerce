@@ -10,13 +10,13 @@ import womenProducts from "./data/womenProducts";
 
 // Category-product mapping
 const products = {
-  men: menProducts,
   women: womenProducts,
+  men: menProducts,
   // electronics: electronicsProducts,
 };
 
 export default function CategorySelector() {
-  const [selectedCategory, setSelectedCategory] = useState("men");
+  const [selectedCategory, setSelectedCategory] = useState("women");
   const router = useRouter();
 
   const handleSeeAll = () => {
