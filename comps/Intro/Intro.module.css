@@ -1,0 +1,21 @@
+/* comps/Intro/Intro.module.css */
+.introContainer {
+  text-align: center;
+  padding: 150px 20px;
+  /* background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd; */
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  /* padding-top: 60px; */
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
