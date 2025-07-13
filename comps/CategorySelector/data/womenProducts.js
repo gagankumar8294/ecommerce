@@ -1,5 +1,47 @@
 const womenProducts = [
     {
+      id: 3,
+      title: "Chanderi Kurti for Women – Fenta Color (Sun Fashion)",
+      price: "₹474",
+      images: [
+        "/blog_images/women/blog1-10/kurthi-blog1-images/third/affordable-slim-fit-kurti-fashion-under-500-2025.jpg",
+      ],
+      link: 'https://amzn.to/4keQqFt'
+    },
+    {
+      id: 10,
+      title: "Coffee Color V Neck T-shirts",
+      price: "₹88",
+      images: [
+        "/products/women/tshirt/coffee-color-v-neck-t-shirts-for-women-and-girls.png",
+      ],
+      link: 'https://www.meesho.com/af_invite/25981860:instagram_stories:353679?p_id=385846559&ext_id=6dq13z&utm_source=instagram_stories'
+    },
+    {
+      id: 6,
+      title: "Long Kurti for Women – Stylish Ankle-Length Gown with Shirt Collar",
+      price: "₹895",
+      images: [
+        "/blog_images/women/blog1-10/anarkali/product1/rayon-ankle-length-kurti-side-profile.png",
+      ],
+      link: "https://amzn.to/44H6biT"
+    },{
+      id: 7,
+      title: "Black Anarkali Shrug Style Embroidered Kurta for Women",
+      price: "₹859",
+      images: [
+        "/blog_images/women/blog1-10/anarkali/product2/black-anarkali-kurta-closeup.png",
+      ],
+      link: "https://amzn.to/4nZ6zlR"
+    },{
+      id: 5,
+      title: "Pink Rayon Blend Kurta Set with Dupatta – Embroidered | 3-Piece Suit",
+      price: "₹652",
+      images: [
+        "/blog_images/women/blog1-10/kurthi-blog1-images/sixth/embroidered-pink-kurta-set.png",
+      ],
+      link: "https://amzn.to/4lrpCTw"
+    },{
       id: 1,
       title: "Straight Green white color Kurti – Organza with Crepe Lining",
       price: "₹499",
@@ -16,15 +58,7 @@ const womenProducts = [
       ],
       link: 'https://amzn.to/3ZWiHcM'
     },
-    {
-      id: 3,
-      title: "Chanderi Kurti for Women – Fenta Color (Sun Fashion)",
-      price: "₹474",
-      images: [
-        "/blog_images/women/blog1-10/kurthi-blog1-images/third/affordable-slim-fit-kurti-fashion-under-500-2025.jpg",
-      ],
-      link: 'https://amzn.to/4keQqFt'
-    },
+    
     {
       id: 4,
       title: "Pink Chanderi Blend Floral Kurti – Calf Length | Puff Sleeves",
@@ -34,33 +68,9 @@ const womenProducts = [
       ],
       link: "https://amzn.to/4nugBek"
     },
-    {
-      id: 5,
-      title: "Pink Rayon Blend Kurta Set with Dupatta – Embroidered | 3-Piece Suit",
-      price: "₹652",
-      images: [
-        "/blog_images/women/blog1-10/kurthi-blog1-images/sixth/embroidered-pink-kurta-set.png",
-      ],
-      link: "https://amzn.to/4lrpCTw"
-    },
-    {
-      id: 6,
-      title: "Long Kurti for Women – Stylish Ankle-Length Gown with Shirt Collar",
-      price: "₹895",
-      images: [
-        "/blog_images/women/blog1-10/anarkali/product1/rayon-ankle-length-kurti-side-profile.png",
-      ],
-      link: "https://amzn.to/44H6biT"
-    },
-    {
-      id: 7,
-      title: "Black Anarkali Shrug Style Embroidered Kurta for Women",
-      price: "₹859",
-      images: [
-        "/blog_images/women/blog1-10/anarkali/product2/black-anarkali-kurta-closeup.png",
-      ],
-      link: "https://amzn.to/4nZ6zlR"
-    },
+    
+    
+    
     {
       id: 8,
       title: "LookMark Chikankari Anarkali Kurti Gown – Cotton Blend, Calf Length, Regular Fit",
