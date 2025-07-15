@@ -113,7 +113,7 @@ const MensTshirts = () => {
   <title>Cotton & Viscose Kurta Sets Under ₹1000 – Office & Daily Wear 2025</title>
 <meta name="description" content="Discover comfortable, stylish kurta sets in cotton and viscose under ₹1000—perfect for daily wear and office in India, curated for 2025 fashion trends." />
 <meta name="author" content="elitepurchase" />
-<link rel="canonical" href="https://elitepurchase.in/blog/cotton-viscose-kurta-sets-under-1000-2025" />
+{/* <link rel="canonical" href="https://elitepurchase.in/blog/cotton-viscose-kurta-sets-under-1000-2025" /> */}
 
 
 {/* <!-- Open Graph / Facebook --> */}
