@@ -1,5 +1,14 @@
 const womenProducts = [
     {
+      id: 11,
+      title: "Western Midi Party Dress",
+      price: "₹449",
+      images: [
+        "/products/women/midi/elegant-rayon-midi-dress-women-outdoor.png",
+      ],
+      link: 'https://amzn.to/40mqKQo'
+    },
+    {
       id: 3,
       title: "Chanderi Kurti for Women – Fenta Color (Sun Fashion)",
       price: "₹474",
