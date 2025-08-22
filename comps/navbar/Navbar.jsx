@@ -39,11 +39,11 @@ function NavBar() {
                     Blog
                   </Link>
                 </li>
-                <li className={styles.hover_buttons}>
+                {/* <li className={styles.hover_buttons}>
                   <Link href="/about" onClick={() => setNavbar(!navbar)}>
                     About
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
         </div>
