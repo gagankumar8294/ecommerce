@@ -6,7 +6,7 @@ const menProducts = [
       images: [
         "/blog_images/mens/blog1-10/bog1-images/bewakoof/adventure/bewakoof-red-adevnture-graphic-print-tshirt-men.jpg",
       ],
-      link: 'https://amzn.to/3T4niWs'
+      link: 'https://amzn.to/45uGCTN'
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ const menProducts = [
       images: [
         "/blog_images/mens/blog1-10/bog1-images/bewakoof/travel/-traveler-lover-bewakoof-black-graphic-print-tshirt-men.jpg",
       ],
-      link: 'https://amzn.to/3T4niWs'
+      link: 'https://amzn.to/4fRWwv2'
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const menProducts = [
       images: [
         "/blog_images/mens/blog1-10/bog1-images/bewakoof/nasa/bewakoof-i-needspace-red-graphic-print-tshirt-men.jpg",
       ],
-      link: 'https://amzn.to/3T4niWs'
+      link: 'https://amzn.to/45IEJSm'
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ const menProducts = [
       images: [
         "/blog_images/mens/blog1-10/bog1-images/bewakoof/anime/bewakoof-black-graphic-print-tshirt-men.jpg",
       ],
-      link: 'https://amzn.to/3T4niWs'
+      link: 'https://amzn.to/47HDTrz'
     },
   ];
   

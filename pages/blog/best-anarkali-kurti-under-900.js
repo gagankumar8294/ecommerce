@@ -245,7 +245,7 @@ const MensTshirts = () => {
     }}
   >
     <a
-      href="https://amzn.to/44H6biT"
+      href="https://amzn.to/478mPef"
       target="_blank"
       rel="noopener noreferrer"
       style={{
@@ -329,7 +329,7 @@ const MensTshirts = () => {
     }}
   >
     <a
-      href="https://amzn.to/4nZ6zlR"
+      href="https://amzn.to/4mDAoXR"
       target="_blank"
       rel="noopener noreferrer"
       style={{
@@ -415,7 +415,7 @@ const MensTshirts = () => {
     }}
   >
     <a
-      href="https://amzn.to/40KDkc8"
+      href="https://amzn.to/4mWoSqq"
       target="_blank"
       rel="noopener noreferrer"
       style={{
@@ -514,7 +514,7 @@ const MensTshirts = () => {
     }}
   >
     <a
-      href="https://amzn.to/3TuBJn1" // Replace with actual affiliate link
+      href="https://amzn.to/4fPsN62" // Replace with actual affiliate link
       target="_blank"
       rel="noopener noreferrer"
       style={{
