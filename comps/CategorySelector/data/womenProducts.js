@@ -6,7 +6,7 @@ const womenProducts = [
       images: [
         "/products/women/midi/elegant-rayon-midi-dress-women-outdoor.png",
       ],
-      link: 'https://amzn.to/40mqKQo'
+      link: 'https://amzn.to/47Ftcpo'
     },
     {
       id: 3,
@@ -15,7 +15,7 @@ const womenProducts = [
       images: [
         "/blog_images/women/blog1-10/kurthi-blog1-images/third/affordable-slim-fit-kurti-fashion-under-500-2025.jpg",
       ],
-      link: 'https://amzn.to/4keQqFt'
+      link: 'https://amzn.to/45QxV5i'
     },
     {
       id: 10,
@@ -33,7 +33,7 @@ const womenProducts = [
       images: [
         "/blog_images/women/blog1-10/anarkali/product1/rayon-ankle-length-kurti-side-profile.png",
       ],
-      link: "https://amzn.to/44H6biT"
+      link: "https://amzn.to/478mPef"
     },{
       id: 7,
       title: "Black Anarkali Shrug Style Embroidered Kurta for Women",
@@ -41,7 +41,7 @@ const womenProducts = [
       images: [
         "/blog_images/women/blog1-10/anarkali/product2/black-anarkali-kurta-closeup.png",
       ],
-      link: "https://amzn.to/4nZ6zlR"
+      link: "https://amzn.to/4mDAoXR"
     },{
       id: 5,
       title: "Pink Rayon Blend Kurta Set with Dupatta – Embroidered | 3-Piece Suit",
@@ -49,14 +49,14 @@ const womenProducts = [
       images: [
         "/blog_images/women/blog1-10/kurthi-blog1-images/sixth/embroidered-pink-kurta-set.png",
       ],
-      link: "https://amzn.to/4lrpCTw"
+      link: "https://amzn.to/474HWOs"
     },{
       id: 1,
       title: "Straight Green white color Kurti – Organza with Crepe Lining",
       price: "₹499",
       images: ["/blog_images/women/blog1-10/kurthi-blog1-images/first/kurti-parrot-green-under-500-2025.jpg"        
       ],
-      link:'https://amzn.to/4nox045'
+      link:'https://amzn.to/4fORIXn'
     },
     {
       id: 2,
@@ -65,7 +65,7 @@ const womenProducts = [
       images: [
         "/blog_images/women/blog1-10/kurthi-blog1-images/second/long-kurti-plus-size-with-pink-bottom.jpg",
       ],
-      link: 'https://amzn.to/3ZWiHcM'
+      link: 'https://amzn.to/474I0ha'
     },
     
     {
@@ -75,7 +75,7 @@ const womenProducts = [
       images: [
         "/blog_images/women/blog1-10/kurthi-blog1-images/fourth/office-wear-kurti-under-500.jpg",
       ],
-      link: "https://amzn.to/4nugBek"
+      link: "https://amzn.to/4756Jlz"
     },
     
     
@@ -87,7 +87,7 @@ const womenProducts = [
       images: [
         "/blog_images/women/blog1-10/anarkali/product3/lookmark-anarkali-kurti-closeup.png",
       ],
-      link: "https://amzn.to/40KDkc8"
+      link: "https://amzn.to/4756Jlz"
     },
     {
       id: 9,
@@ -96,7 +96,7 @@ const womenProducts = [
       images: [
         "/blog_images/women/blog1-10/anarkali/product4/anarkali-kurta-back-side.png",
       ],
-      link: "https://amzn.to/3TuBJn1"
+      link: "https://amzn.to/4fPsN62"
     },
   ];
   
