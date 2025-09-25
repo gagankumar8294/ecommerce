@@ -34,3 +34,5 @@ export const deleteProduct = async (id) => {
   });
   return res.json();
 };
+
+console.log("API URL from env:", process.env.NEXT_PUBLIC_API_URL);
