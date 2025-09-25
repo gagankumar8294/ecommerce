@@ -2,6 +2,8 @@ import Head from 'next/head'
 import CategorySelector from '@/comps/CategorySelector/CategorySelection';
 import SliderBanner from '@/comps/carousel/slider';
 import Intro from '@/comps/Intro/Intro';
+import ProductList from '@/comps/ProductList';
+import ProductForm from '@/comps/ProductForm';
 
 export default function Home() {
 
@@ -35,7 +37,7 @@ export default function Home() {
       
       {/* <SliderBanner /> */}
       <Intro />
-        <CategorySelector />      
+        <CategorySelector />
     </>
   )
 }

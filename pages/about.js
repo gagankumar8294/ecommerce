@@ -1,5 +1,7 @@
 import Head from "next/head"
 import styles from '../styles/Home.module.css'
+import ProductForm from "@/comps/ProductForm"
+import ProductList from "@/comps/ProductList"
 
 const About = () => {
     return (
@@ -14,6 +16,11 @@ const About = () => {
             <p className={styles.text}>event  compiled client and server successfully in 3.4s 164 modules</p>
             <p className={styles.text}>wait compiling client and server event compiled client and server successf</p> */}
             <h2 className={styles.maintenance}>This page is under Maintenance</h2>
+            <div style={{ padding: "20px" }}>
+      <h1>Elite Purchase</h1>
+      <ProductForm onSuccess={() => window.location.reload()} />
+      <ProductList />
+    </div>
         </div>
         </>
     )
