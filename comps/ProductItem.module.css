@@ -1,0 +1,148 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.price {
+  font-weight: 500;
+  color: #222;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.mainImage {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.subImages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.subImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.subImageRow {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.subTitle {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.actionRow {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  border: none;
+}
+
+.editBtn {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.deleteBtn {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.saveBtn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.cancelBtn {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.addBtn {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.removeBtn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.timestamps {
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 4px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .mainImage {
+    max-height: 140px;
+  }
+  .subImage {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .actionRow {
+    flex-direction: column;
+  }
+}

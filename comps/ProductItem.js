@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import styles from './ProductItem.module.css';
 
 export default function ProductItem({ product, onDelete, onUpdate }) {
   const [isEditing, setIsEditing] = useState(false);
@@ -35,85 +36,124 @@ export default function ProductItem({ product, onDelete, onUpdate }) {
   };
 
   return (
-    <div style={{ border: "1px solid gray", margin: "8px", padding: "8px" }}>
+    <div className={styles.card}>
       {isEditing ? (
         <>
-          {/* Name */}
           <input
             type="text"
             placeholder="Product Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            className={styles.input}
           />
 
-          {/* Price */}
           <input
             type="number"
             placeholder="Price"
             value={price}
             onChange={(e) => setPrice(e.target.value)}
+            className={styles.input}
           />
 
-          {/* Description */}
           <textarea
             placeholder="Product Description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
+            className={styles.textarea}
           />
 
-          {/* Main Image */}
           <input
             type="text"
             placeholder="Main Image URL"
             value={mainImage}
             onChange={(e) => setMainImage(e.target.value)}
+            className={styles.input}
           />
           {mainImage && (
-            <img src={mainImage} alt="Main" width="120" style={{ marginTop: "8px" }} />
+            <img src={mainImage} alt="Main" className={styles.mainImage} />
           )}
 
-          {/* Sub Images */}
-          <h4>Sub Images</h4>
+          <h4 className={styles.subTitle}>Sub Images</h4>
           {subImages.map((img, i) => (
-            <div key={i} style={{ display: "flex", marginBottom: "5px" }}>
+            <div key={i} className={styles.subImageRow}>
               <input
                 type="text"
                 placeholder="Sub Image URL"
                 value={img}
                 onChange={(e) => handleSubImageChange(i, e.target.value)}
+                className={styles.input}
               />
-              <button onClick={() => handleRemoveSubImage(i)}>❌</button>
+              <button
+                type="button"
+                className={`${styles.btn} ${styles.removeBtn}`}
+                onClick={() => handleRemoveSubImage(i)}
+              >
+                ❌
+              </button>
             </div>
           ))}
-          <button onClick={handleAddSubImage}>+ Add Sub Image</button>
+          <button
+            type="button"
+            className={`${styles.btn} ${styles.addBtn}`}
+            onClick={handleAddSubImage}
+          >
+            + Add Sub Image
+          </button>
 
-          <br />
-          <button onClick={handleSave}>Save</button>
-          <button onClick={() => setIsEditing(false)}>Cancel</button>
+          <div className={styles.actionRow}>
+            <button className={`${styles.btn} ${styles.saveBtn}`} onClick={handleSave}>
+              Save
+            </button>
+            <button
+              className={`${styles.btn} ${styles.cancelBtn}`}
+              onClick={() => setIsEditing(false)}
+            >
+              Cancel
+            </button>
+          </div>
         </>
       ) : (
         <>
-          <h3>{product.name}</h3>
-          <p>Price: ₹{product.price}</p>
-          <p>{product.description}</p>
+          <h3 className={styles.title}>{product.name}</h3>
+          <p className={styles.price}>Price: ₹{product.price}</p>
+          <p className={styles.desc}>{product.description}</p>
 
-          {/* Display Main Image */}
           {product.mainImage && (
-            <img src={product.mainImage} alt={product.name} width="150" />
+            <img
+              src={product.mainImage}
+              alt={product.name}
+              className={styles.mainImage}
+            />
           )}
 
-          {/* Display Sub Images */}
           {product.subImages?.length > 0 && (
-            <div style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
+            <div className={styles.subImages}>
               {product.subImages.map((img, i) => (
-                <img key={i} src={img} alt={`Sub ${i}`} width="80" />
+                <img key={i} src={img} alt={`Sub ${i}`} className={styles.subImage} />
               ))}
             </div>
           )}
 
-          <br />
-          <button onClick={() => setIsEditing(true)}>Edit</button>
-          <button onClick={() => onDelete(product._id)}>Delete</button>
+          {/* Timestamps */}
+          <p className={styles.timestamps}>
+            Created: {new Date(product.createdAt).toLocaleString()} <br />
+            Updated: {new Date(product.updatedAt).toLocaleString()}
+          </p>
+
+          <div className={styles.actionRow}>
+            <button
+              className={`${styles.btn} ${styles.editBtn}`}
+              onClick={() => setIsEditing(true)}
+            >
+              Edit
+            </button>
+            <button
+              className={`${styles.btn} ${styles.deleteBtn}`}
+              onClick={() => onDelete(product._id)}
+            >
+              Delete
+            </button>
+          </div>
         </>
       )}
     </div>

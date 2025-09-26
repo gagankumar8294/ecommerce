@@ -7,8 +7,8 @@ const About = () => {
     return (
         <>
         <Head>
-            <title>CodeAspirant | About Page</title>
-            <meta name='keywords' content="codeaspirant" />
+            <title>Elitepurchase | About Page</title>
+            <meta name='keywords' content="elitepurchase" />
         </Head>
         <div style={{paddingTop:"150px"}}>
             {/* <h1 className={styles.title}>About</h1>
@@ -17,9 +17,9 @@ const About = () => {
             <p className={styles.text}>wait compiling client and server event compiled client and server successf</p> */}
             <h2 className={styles.maintenance}>This page is under Maintenance</h2>
             <div style={{ padding: "20px" }}>
-      <h1>Elite Purchase</h1>
+      {/* <h1>Elite Purchase</h1>
       <ProductForm onSuccess={() => window.location.reload()} />
-      <ProductList />
+      <ProductList /> */}
     </div>
         </div>
         </>
