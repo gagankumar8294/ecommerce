@@ -1,12 +1,13 @@
 "use client";
 import { useState } from "react";
-import styles from './ProductItem.module.css';
+import styles from "./ProductItem.module.css";
 
 export default function ProductItem({ product, onDelete, onUpdate }) {
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(product.name);
   const [price, setPrice] = useState(product.price);
   const [description, setDescription] = useState(product.description || "");
+  const [productUrl, setProductUrl] = useState(product.productUrl || ""); // ✅
   const [mainImage, setMainImage] = useState(product.mainImage || "");
   const [subImages, setSubImages] = useState(product.subImages || []);
 
@@ -17,7 +18,7 @@ export default function ProductItem({ product, onDelete, onUpdate }) {
       description,
       mainImage,
       subImages,
-      productUrl, // ✅ save link
+      productUrl,
     });
     setIsEditing(false);
   };
@@ -78,9 +79,8 @@ export default function ProductItem({ product, onDelete, onUpdate }) {
             onChange={(e) => setMainImage(e.target.value)}
             className={styles.input}
           />
-          {mainImage && (
-            <img src={mainImage} alt="Main" className={styles.mainImage} />
-          )}
+
+          {mainImage && <img src={mainImage} alt="Main" className={styles.mainImage} />}
 
           <h4 className={styles.subTitle}>Sub Images</h4>
           {subImages.map((img, i) => (
@@ -128,11 +128,7 @@ export default function ProductItem({ product, onDelete, onUpdate }) {
           <p className={styles.desc}>{product.description}</p>
 
           {product.mainImage && (
-            <img
-              src={product.mainImage}
-              alt={product.name}
-              className={styles.mainImage}
-            />
+            <img src={product.mainImage} alt={product.name} className={styles.mainImage} />
           )}
 
           {product.subImages?.length > 0 && (
@@ -143,11 +139,11 @@ export default function ProductItem({ product, onDelete, onUpdate }) {
             </div>
           )}
 
-          {/* Timestamps */}
-          <p className={styles.timestamps}>
-            Created: {new Date(product.createdAt).toLocaleString()} <br />
-            Updated: {new Date(product.updatedAt).toLocaleString()}
-          </p>
+          {product.productUrl && (
+            <a href={product.productUrl} target="_blank" rel="noopener noreferrer">
+              <button className={`${styles.btn} ${styles.buyBtn}`}>Buy from Amazon</button>
+            </a>
+          )}
 
           <div className={styles.actionRow}>
             <button

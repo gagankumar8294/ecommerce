@@ -1,12 +1,13 @@
 "use client";
 import { useState } from "react";
 import { addProduct } from "../services/api";
-import styles from './ProductForm.module.css' // import CSS module
+import styles from "./ProductForm.module.css";
 
 export default function ProductForm({ onSuccess }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
+  const [productUrl, setProductUrl] = useState(""); // ✅ added
   const [mainImage, setMainImage] = useState(null);
   const [mainImageUrl, setMainImageUrl] = useState("");
   const [subImages, setSubImages] = useState([]);
@@ -19,6 +20,7 @@ export default function ProductForm({ onSuccess }) {
     formData.append("name", name);
     formData.append("price", price);
     formData.append("description", description);
+    formData.append("productUrl", productUrl); // ✅ added
 
     if (mainImage) formData.append("mainImage", mainImage);
     if (mainImageUrl) formData.append("mainImage", mainImageUrl);
@@ -34,14 +36,18 @@ export default function ProductForm({ onSuccess }) {
     }
 
     await addProduct(formData);
+
+    // reset form
     setName("");
     setPrice("");
     setDescription("");
+    setProductUrl("");
     setMainImage(null);
     setMainImageUrl("");
     setSubImages([]);
     setSubImageUrls("");
-    onSuccess();
+
+    onSuccess?.();
   };
 
   return (
@@ -53,6 +59,14 @@ export default function ProductForm({ onSuccess }) {
         placeholder="Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        className={styles.input}
+      />
+
+      <input
+        type="text"
+        placeholder="Product URL (Amazon link)"
+        value={productUrl}
+        onChange={(e) => setProductUrl(e.target.value)}
         className={styles.input}
       />
 
