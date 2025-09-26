@@ -15,14 +15,23 @@ export const getProducts = async (search = "") => {
 // };
 
 // ✅ Add a new product
-export const addProduct = async (product) => {
+// export const addProduct = async (product) => {
+//   const res = await fetch(`${API_URL}/api/products`, {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify(product),
+//   });
+//   return res.json();
+// };
+
+export const addProduct = async (formData) => {
   const res = await fetch(`${API_URL}/api/products`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(product),
+    body: formData,
   });
   return res.json();
 };
+
 
 // ✅ Update product
 export const updateProduct = async (id, product) => {
