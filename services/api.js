@@ -1,29 +1,16 @@
-// services/api.js
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
-// ✅ Get products (with optional search)
-export const getProducts = async (search = "") => {
-  const query = search ? `?search=${encodeURIComponent(search)}` : "";
-  const res = await fetch(`${API_URL}/api/products${query}`);
+// ✅ Get products (with optional search & sort)
+export const getProducts = async (search = "", sort = "") => {
+  const query = new URLSearchParams();
+  if (search) query.append("search", search);
+  if (sort) query.append("sort", sort);
+
+  const res = await fetch(`${API_URL}/api/products?${query.toString()}`);
   return res.json();
 };
 
-// ✅ Get all products
-// export const getProducts = async () => {
-//   const res = await fetch(`${API_URL}/api/products`);
-//   return res.json();
-// };
-
-// ✅ Add a new product
-// export const addProduct = async (product) => {
-//   const res = await fetch(`${API_URL}/api/products`, {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify(product),
-//   });
-//   return res.json();
-// };
-
+// ✅ Add product
 export const addProduct = async (formData) => {
   const res = await fetch(`${API_URL}/api/products`, {
     method: "POST",
@@ -31,7 +18,6 @@ export const addProduct = async (formData) => {
   });
   return res.json();
 };
-
 
 // ✅ Update product
 export const updateProduct = async (id, product) => {

@@ -4,6 +4,7 @@ import SliderBanner from '@/comps/carousel/slider';
 import Intro from '@/comps/Intro/Intro';
 import ProductList from '@/comps/ProductList';
 import ProductForm from '@/comps/ProductForm';
+import ProductGallery from '@/comps/ProductGallery';
 
 
 export default function Home() {
@@ -39,6 +40,7 @@ export default function Home() {
       {/* <SliderBanner /> */}
       <Intro />
         <CategorySelector />
+        <ProductGallery />
     </>
   )
 }

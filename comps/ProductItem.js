@@ -17,6 +17,7 @@ export default function ProductItem({ product, onDelete, onUpdate }) {
       description,
       mainImage,
       subImages,
+      productUrl, // ✅ save link
     });
     setIsEditing(false);
   };
@@ -44,6 +45,14 @@ export default function ProductItem({ product, onDelete, onUpdate }) {
             placeholder="Product Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            className={styles.input}
+          />
+
+          <input
+            type="text"
+            placeholder="Product URL (Amazon link)"
+            value={productUrl}
+            onChange={(e) => setProductUrl(e.target.value)}
             className={styles.input}
           />
 
