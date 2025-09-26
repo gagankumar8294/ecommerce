@@ -1,11 +1,18 @@
 // services/api.js
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
-// ✅ Get all products
-export const getProducts = async () => {
-  const res = await fetch(`${API_URL}/api/products`);
+// ✅ Get products (with optional search)
+export const getProducts = async (search = "") => {
+  const query = search ? `?search=${encodeURIComponent(search)}` : "";
+  const res = await fetch(`${API_URL}/api/products${query}`);
   return res.json();
 };
+
+// ✅ Get all products
+// export const getProducts = async () => {
+//   const res = await fetch(`${API_URL}/api/products`);
+//   return res.json();
+// };
 
 // ✅ Add a new product
 export const addProduct = async (product) => {
