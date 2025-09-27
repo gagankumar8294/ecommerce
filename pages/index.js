@@ -39,7 +39,7 @@ export default function Home() {
       
       {/* <SliderBanner /> */}
       <Intro />
-        <CategorySelector />
+        {/* <CategorySelector /> */}
         <ProductGallery />
     </>
   )
