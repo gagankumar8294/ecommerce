@@ -3,6 +3,54 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../services/api";
 import styles from "./ProductGallery.module.css";
 
+
+// ✅ Card with image skeleton until loaded
+function ProductCard({ product, handleRedirect }) {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
+  return (
+    <div
+      className={styles.card}
+      onClick={() => handleRedirect(product.productUrl)}
+      style={{ cursor: "pointer" }}
+    >
+      {/* Show skeleton until image is fully loaded */}
+      {!imgLoaded && (
+        <div className={`${styles.skeleton} ${styles.skeletonImage}`} />
+      )}
+
+      {product.mainImage && (
+        <img
+          src={product.mainImage}
+          alt={product.name}
+          className={styles.image}
+          style={{
+            display: imgLoaded ? "block" : "none",
+            opacity: imgLoaded ? 1 : 0,
+            transition: "opacity 0.4s ease-in-out",
+          }}
+          onLoad={() => setImgLoaded(true)}
+        />
+      )}
+
+      <h3 className={styles.name}>{product.name}</h3>
+      <p className={styles.price}>₹{product.price}</p>
+
+      {product.productUrl && (
+        <button
+          className={styles.buyBtn}
+          onClick={(e) => {
+            e.stopPropagation(); // prevent card click
+            handleRedirect(product.productUrl);
+          }}
+        >
+          Buy from Amazon
+        </button>
+      )}
+    </div>
+  );
+}
+
 export default function ProductGallery() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -71,34 +119,11 @@ export default function ProductGallery() {
           <p>No products available</p>
         ) : (
           products.map((p) => (
-            <div
+            <ProductCard
               key={p._id}
-              className={styles.card}
-              onClick={() => handleRedirect(p.productUrl)}
-              style={{ cursor: "pointer" }}
-            >
-              {p.mainImage && (
-                <img
-                  src={p.mainImage}
-                  alt={p.name}
-                  className={styles.image}
-                />
-              )}
-              <h3 className={styles.name}>{p.name}</h3>
-              <p className={styles.price}>₹{p.price}</p>
-
-              {p.productUrl && (
-                <button
-                  className={styles.buyBtn}
-                  onClick={(e) => {
-                    e.stopPropagation(); // prevent card click
-                    handleRedirect(p.productUrl);
-                  }}
-                >
-                  Buy from Amazon
-                </button>
-              )}
-            </div>
+              product={p}
+              handleRedirect={handleRedirect}
+            />
           ))
         )}
       </div>
