@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../services/api";
 import styles from "./ProductGallery.module.css";
 
-
 // ✅ Card with image skeleton until loaded
 function ProductCard({ product, handleRedirect }) {
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -56,6 +55,7 @@ export default function ProductGallery() {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState(""); // ✅ search text
   const [sort, setSort] = useState("updatedDesc"); // ✅ default sort
+  const [countdown, setCountdown] = useState(15); // ✅ countdown state
 
   useEffect(() => {
     loadProducts(search, sort);
@@ -63,6 +63,19 @@ export default function ProductGallery() {
 
   const loadProducts = async (searchTerm = "", sortType = "") => {
     setLoading(true);
+    setCountdown(15); // reset countdown when fetching starts
+
+    // Start countdown timer
+    const interval = setInterval(() => {
+      setCountdown((prev) => {
+        if (prev <= 1) {
+          clearInterval(interval);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
     try {
       const data = await getProducts(searchTerm, sortType);
       setProducts(data);
@@ -70,6 +83,7 @@ export default function ProductGallery() {
       console.error("Failed to fetch products", error);
     } finally {
       setLoading(false);
+      clearInterval(interval); // stop countdown when loading ends
     }
   };
 
@@ -102,6 +116,13 @@ export default function ProductGallery() {
           <option value="priceDesc">Price: High → Low</option>
         </select>
       </div>
+
+      {/* ⏳ Countdown Timer */}
+      {loading && (
+        <div className={styles.countdown}>
+          Fetching products... ⏳ {countdown}s
+        </div>
+      )}
 
       {/* 🖼️ Products */}
       <div className={styles.gallery}>
