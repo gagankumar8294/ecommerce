@@ -63,7 +63,7 @@ export default function ProductGallery() {
 
   const loadProducts = async (searchTerm = "", sortType = "") => {
     setLoading(true);
-    setCountdown(15); // reset countdown when fetching starts
+    setCountdown(19); // reset countdown when fetching starts
 
     // Start countdown timer
     const interval = setInterval(() => {
