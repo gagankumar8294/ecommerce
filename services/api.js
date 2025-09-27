@@ -6,6 +6,9 @@ export const getProducts = async (search = "", sort = "") => {
   if (search) query.append("search", search);
   if (sort) query.append("sort", sort);
 
+   // 🔹 Add artificial delay (3s) to test skeleton loading
+  // await new Promise((resolve) => setTimeout(resolve, 5000));
+
   const res = await fetch(`${API_URL}/api/products?${query.toString()}`);
   return res.json();
 };

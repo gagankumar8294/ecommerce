@@ -5,14 +5,22 @@ import styles from "./ProductGallery.module.css";
 
 export default function ProductGallery() {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true); // ✅ track loading state
 
   useEffect(() => {
     loadProducts();
   }, []);
 
   const loadProducts = async () => {
-    const data = await getProducts();
-    setProducts(data);
+    setLoading(true);
+    try {
+      const data = await getProducts();
+      setProducts(data);
+    } catch (error) {
+      console.error("Failed to fetch products", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleRedirect = (url) => {
@@ -23,14 +31,24 @@ export default function ProductGallery() {
 
   return (
     <div className={styles.gallery}>
-      {products.length === 0 ? (
+      {/* ✅ Show skeleton loader while fetching */}
+      {loading ? (
+        [...Array(6)].map((_, i) => (
+          <div key={i} className={styles.skeletonCard}>
+            <div className={`${styles.skeleton} ${styles.skeletonImage}`} />
+            <div className={`${styles.skeleton} ${styles.skeletonTitle}`} />
+            <div className={`${styles.skeleton} ${styles.skeletonPrice}`} />
+            <div className={`${styles.skeleton} ${styles.skeletonBtn}`} />
+          </div>
+        ))
+      ) : products.length === 0 ? (
         <p>No products available</p>
       ) : (
         products.map((p) => (
           <div
             key={p._id}
             className={styles.card}
-            onClick={() => handleRedirect(p.productUrl)} // ✅ Redirect when clicking anywhere on card
+            onClick={() => handleRedirect(p.productUrl)}
             style={{ cursor: "pointer" }}
           >
             {p.mainImage && (
@@ -43,12 +61,11 @@ export default function ProductGallery() {
             <h3 className={styles.name}>{p.name}</h3>
             <p className={styles.price}>₹{p.price}</p>
 
-            {/* ✅ Dedicated button for Amazon link */}
             {p.productUrl && (
               <button
                 className={styles.buyBtn}
                 onClick={(e) => {
-                  e.stopPropagation(); // prevent triggering card click
+                  e.stopPropagation();
                   handleRedirect(p.productUrl);
                 }}
               >

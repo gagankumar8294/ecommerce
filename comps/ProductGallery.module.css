@@ -1,53 +1,107 @@
+/* Gallery Layout */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
+/* Product Card */
 .card {
-  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: center;
   transition: transform 0.2s;
+  background: #fff;
 }
 
 .card:hover {
   transform: scale(1.03);
 }
 
+/* Product Image */
 .image {
   width: 100%;
-  height: auto; /* ✅ Let height adjust automatically */
-  max-height: 400px; /* Optional: limit maximum height */
-  object-fit: contain; /* ✅ Show full image without cropping */
-  border-radius: 8px;
+  height: 300px; /* full length */
+  object-fit: contain;
+  border-radius: 10px;
 }
 
+/* Product Info */
 .name {
+  font-size: 18px;
+  font-weight: bold;
   margin: 10px 0 5px;
-  font-size: 1.2rem;
 }
 
 .price {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #198038;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
 }
 
+/* Buy Button */
 .buyBtn {
-  margin-top: 10px;
-  padding: 8px 12px;
-  background-color: #ff9900;
+  background: #ff9900;
   border: none;
-  border-radius: 5px;
   color: white;
-  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 .buyBtn:hover {
-  background-color: #e68a00;
+  background: #e68a00;
+}
+
+/* Skeleton Loader */
+.skeletonCard {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #eee 25%, #ddd 50%, #eee 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 6px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeletonImage {
+  width: 100%;
+  height: 300px;
+}
+
+.skeletonTitle {
+  width: 70%;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.skeletonPrice {
+  width: 40%;
+  height: 18px;
+  margin: 0 auto;
+}
+
+.skeletonBtn {
+  width: 60%;
+  height: 35px;
+  margin: 0 auto;
 }
