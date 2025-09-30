@@ -1,10 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import styles from "./navbar.module.css";
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+
   return (
     <div>
       <nav style={{
@@ -44,6 +47,11 @@ function NavBar() {
                     About
                   </Link>
                 </li> */}
+                <li className={styles.hover_buttons}>
+                <Link href="/cart" onClick={() => setNavbar(false)}>
+                  Cart 🛒 ({totalQuantity})
+                </Link>
+              </li>
               </ul>
             </div>
         </div>

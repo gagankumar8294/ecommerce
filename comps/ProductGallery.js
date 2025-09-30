@@ -1,11 +1,19 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/redux/cartSlice";
 import { getProducts } from "../services/api";
 import styles from "./ProductGallery.module.css";
 
 // ✅ Card with image skeleton until loaded
 function ProductCard({ product, handleRedirect }) {
   const [imgLoaded, setImgLoaded] = useState(false);
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (e) => {
+    e.stopPropagation();
+    dispatch(addToCart(product));
+  }
 
   return (
     <div
@@ -34,6 +42,13 @@ function ProductCard({ product, handleRedirect }) {
 
       <h3 className={styles.name}>{product.name}</h3>
       <p className={styles.price}>₹{product.price}</p>
+
+        <button
+          className={styles.cartBtn}
+          onClick={handleAddToCart}
+        >
+          Add to Cart
+        </button>
 
       {product.productUrl && (
         <button
