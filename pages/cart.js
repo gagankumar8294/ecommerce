@@ -35,25 +35,19 @@ export default function CartPage() {
   const dispatch = useDispatch();
 
   // ✅ useCallback to prevent re-creation of functions on every render
-  const handleDecrease = useCallback(
-    (id) => {
+  const handleDecrease = useCallback((id) => {
       dispatch(decreaseQty(id));
-    },
-    [dispatch]
+    }, [dispatch]
   );
 
-  const handleIncrease = useCallback(
-    (item) => {
+  const handleIncrease = useCallback((item) => {
       dispatch(addToCart(item));
-    },
-    [dispatch]
+    }, [dispatch]
   );
 
-  const handleRemove = useCallback(
-    (id) => {
+  const handleRemove = useCallback((id) => {
       dispatch(removeFromCart(id));
-    },
-    [dispatch]
+    }, [dispatch]
   );
 
   const handleClearCart = useCallback(() => {
