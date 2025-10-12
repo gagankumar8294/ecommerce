@@ -1,7 +1,7 @@
 // components/LoginButton.js
 export default function LoginButton() {
   const handleLogin = () => {
-    window.open("https://elitepurchase.in/api/auth/google", "_self");
+    window.open("https://elitepurchase-backend.onrender.com/api/auth/google", "_self");
   };
 
   return (
