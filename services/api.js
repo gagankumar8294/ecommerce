@@ -1,4 +1,6 @@
+//services/api.js
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
+// https://elitepurchase-backend.onrender.com
 
 // ✅ Get products (with optional search & sort)
 export const getProducts = async (search = "", sort = "") => {

@@ -1,3 +1,4 @@
+// comps/ProductList
 "use client";
 import { useEffect, useState } from "react";
 import { getProducts, deleteProduct, updateProduct } from "../services/api";
