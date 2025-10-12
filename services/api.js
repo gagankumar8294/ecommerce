@@ -41,3 +41,16 @@ export const deleteProduct = async (id) => {
   });
   return res.json();
 };
+
+// utils/api.js
+export async function fetchUser() {
+  try {
+    const res = await fetch("https://elitepurchase.in/api/auth/me", {
+      credentials: "include", // very important for sending cookies
+    });
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    console.error("Error fetching user:", err);
+  }
+}

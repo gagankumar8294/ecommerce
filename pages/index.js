@@ -5,9 +5,20 @@ import Intro from '@/comps/Intro/Intro';
 import ProductList from '@/comps/ProductList';
 import ProductForm from '@/comps/ProductForm';
 import ProductGallery from '@/comps/ProductGallery';
-
+import { fetchUser } from '@/services/api';
+import LoginButton from '@/comps/LoginButton';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    fetchUser().then((data) => {
+      if (data?.success) {
+        setUser(data.user);
+      }
+    });
+  }, []);
 
   return (
     <>
@@ -40,6 +51,22 @@ export default function Home() {
       {/* <SliderBanner /> */}
       <Intro />
         {/* <CategorySelector /> */}
+        <div style={{ padding: "2rem" }}>
+      {user ? (
+        <>
+          <h2>Welcome, {user.name}</h2>
+          <img
+            src={user.avatar}
+            alt={user.name}
+            style={{ width: "80px", borderRadius: "50%" }}
+          />
+          <p>{user.email}</p>
+          <a href="https://elitepurchase.in/api/auth/logout">Logout</a>
+        </>
+      ) : (
+        <LoginButton />
+      )}
+    </div>
         <ProductGallery />
     </>
   )
