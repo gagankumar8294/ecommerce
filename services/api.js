@@ -45,7 +45,7 @@ export const deleteProduct = async (id) => {
 // utils/api.js
 export async function fetchUser() {
   try {
-    const res = await fetch("https://elitepurchase.in/api/auth/me", {
+    const res = await fetch("https://elitepurchase-backend.onrender.com/api/auth/me", {
       credentials: "include", // very important for sending cookies
     });
     const data = await res.json();
