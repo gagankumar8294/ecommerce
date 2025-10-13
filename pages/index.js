@@ -61,7 +61,7 @@ export default function Home() {
             style={{ width: "80px", borderRadius: "50%" }}
           />
           <p>{user.email}</p>
-          <a href="https://elitepurchase.in/api/auth/logout">Logout</a>
+          <a href="https://elitepurchase-backend.onrender.com/api/auth/logout">Logout</a>
         </>
       ) : (
         <LoginButton />
