@@ -45,12 +45,17 @@ export const deleteProduct = async (id) => {
 // utils/api.js
 export async function fetchUser() {
   try {
-    const res = await fetch("https://elitepurchase-backend.onrender.com/api/auth/me", {
+    const res = await fetch(`${API_URL}/api/auth/me`, {
       credentials: "include", // very important for sending cookies
     });
+    if (!res.ok) {
+      throw new Error("Not logged in");
+    }
+
     const data = await res.json();
     return data;
   } catch (err) {
     console.error("Error fetching user:", err);
+    return null;
   }
 }
