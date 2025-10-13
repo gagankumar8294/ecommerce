@@ -54,15 +54,104 @@ export default function Home() {
         <div style={{ padding: "2rem" }}>
       {user ? (
         <>
-          <h2>Welcome, {user.name}</h2>
-          <img
-            src={user.avatar}
-            alt={user.name}
-            style={{ width: "80px", borderRadius: "50%" }}
-          />
-          <p>{user.email}</p>
-          <a href="https://elitepurchase-backend.onrender.com/api/auth/logout">Logout</a>
-        </>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      textAlign: "center",
+      background: "linear-gradient(135deg, #f8f9fa, #e9ecef)",
+      padding: "3rem 2rem",
+      borderRadius: "20px",
+      boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+      transition: "all 0.6s ease",
+      animation: "fadeIn 1.2s ease-in-out",
+      maxWidth: "400px",
+      margin: "2rem auto",
+    }}
+  >
+    <h2
+      style={{
+        color: "#333",
+        marginBottom: "1rem",
+        fontFamily: "'Poppins', sans-serif",
+        fontWeight: "600",
+        letterSpacing: "0.5px",
+      }}
+    >
+      Welcome, {user.name} 👋
+    </h2>
+
+    <img
+      src={user.avatar}
+      alt={user.name}
+      style={{
+        width: "100px",
+        height: "100px",
+        borderRadius: "50%",
+        marginBottom: "1rem",
+        border: "3px solid #0070f3",
+        boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
+        transition: "transform 0.4s ease",
+      }}
+      onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+      onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+    />
+
+    <p
+      style={{
+        color: "#555",
+        marginBottom: "1.5rem",
+        fontSize: "1rem",
+        fontFamily: "'Poppins', sans-serif",
+      }}
+    >
+      {user.email}
+    </p>
+
+    <a
+      href="https://elitepurchase-backend.onrender.com/api/auth/logout"
+      style={{
+        display: "inline-block",
+        backgroundColor: "#0070f3",
+        color: "white",
+        padding: "0.6rem 1.5rem",
+        borderRadius: "30px",
+        textDecoration: "none",
+        fontWeight: "500",
+        fontFamily: "'Poppins', sans-serif",
+        boxShadow: "0 3px 8px rgba(0, 112, 243, 0.3)",
+        transition: "all 0.3s ease",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = "#0059c9";
+        e.currentTarget.style.boxShadow = "0 4px 12px rgba(0, 112, 243, 0.5)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = "#0070f3";
+        e.currentTarget.style.boxShadow = "0 3px 8px rgba(0, 112, 243, 0.3)";
+      }}
+    >
+      Logout
+    </a>
+  </div>
+
+  {/* 🔹 Fade-in animation keyframes (inline style trick) */}
+  <style jsx>{`
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  `}</style>
+</>
+
       ) : (
         <LoginButton />
       )}
